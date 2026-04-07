@@ -1,9 +1,8 @@
 #!/usr/bin/env python3
 """
 Duval County, Florida — Motivated Seller Lead Scraper
-Scrapes the Duval County Clerk portal for foreclosure, lien, judgment, and
-other distressed-property documents, enriches each record with parcel data
-from the Property Appraiser, and writes output JSON + GHL-ready CSV.
+Scrapes the Duval County Clerk portal for distressed-property documents,
+enriches records with parcel data, scores them, and exports JSON + GHL CSV.
 """
 
 import asyncio
@@ -44,66 +43,29 @@ LOOKBACK_DAYS = int(os.getenv("LOOKBACK_DAYS", "7"))
 MAX_RETRIES = 3
 RETRY_DELAY = 5  # seconds
 
-# All document-type codes to collect
-DOC_TYPES = [
-    "LP",
-    "NOFC",
-    "TAXDEED",
-    "JUD",
-    "CCJ",
-    "DRJUD",
-    "LNCORPTX",
-    "LNIRS",
-    "LNFED",
-    "LN",
-    "LNMECH",
-    "LNHOA",
-    "MEDLN",
-    "PRO",
-    "NOC",
-    "RELLP",
-]
-
-DOC_TYPE_LABELS = {
-    "LP":       "Lis Pendens",
-    "NOFC":     "Notice of Foreclosure",
-    "TAXDEED":  "Tax Deed",
-    "JUD":      "Judgment",
-    "CCJ":      "Certified Judgment",
-    "DRJUD":    "Domestic Judgment",
-    "LNCORPTX": "Corp Tax Lien",
-    "LNIRS":    "IRS Lien",
-    "LNFED":    "Federal Lien",
-    "LN":       "Lien",
-    "LNMECH":   "Mechanic Lien",
-    "LNHOA":    "HOA Lien",
-    "MEDLN":    "Medicaid Lien",
-    "PRO":      "Probate",
-    "NOC":      "Notice of Commencement",
-    "RELLP":    "Release Lis Pendens",
+# ---------------------------------------------------------------------------
+# Doc type mapping: internal code → (portal numeric ID, label, category)
+# IDs sourced directly from the Kendo ComboBox data on the clerk portal.
+# ---------------------------------------------------------------------------
+DOC_TYPE_CONFIG = {
+    # code: (numeric_id, label, category, cat_label)
+    "LP":       (104, "Lis Pendens",              "foreclosure", "Pre-Foreclosure / Lis Pendens"),
+    "NTD":      (149, "Notice of Tax Deed Sale",  "foreclosure", "Pre-Foreclosure / Lis Pendens"),
+    "TAXDEED":  (158, "Tax Deed",                 "tax",         "Tax Lien / Tax Deed"),
+    "TXDC":     (134, "Tax Deed (City Redeemed)", "tax",         "Tax Lien / Tax Deed"),
+    "JDG":      (97,  "Judgment",                 "judgment",    "Judgment / Lien"),
+    "JDGR":     (98,  "Judgment/Restitution",     "judgment",    "Judgment / Lien"),
+    "CCCJUDG":  (79,  "CC Court Judgment",        "judgment",    "Judgment / Lien"),
+    "DVJ":      (145, "Domestic Violence Judgment","judgment",   "Judgment / Lien"),
+    "LN":       (103, "Lien",                     "lien",        "Lien"),
+    "JVRL":     (102, "Juvenile Restitution Lien","lien",        "Lien"),
+    "PROB":     (124, "Probate",                  "probate",     "Probate / Estate"),
+    "NOC":      (115, "Notice of Commencement",   "noc",         "Notice of Commencement"),
+    "RELEASE":  (126, "Release",                  "release",     "Release"),
+    "PTL_REL":  (125, "Partial Release",          "release",     "Release"),
 }
 
-# Category groupings
-CAT_MAP = {
-    "LP":       ("foreclosure", "Pre-Foreclosure / Lis Pendens"),
-    "NOFC":     ("foreclosure", "Pre-Foreclosure / Lis Pendens"),
-    "TAXDEED":  ("tax",        "Tax Lien / Tax Deed"),
-    "JUD":      ("judgment",   "Judgment / Lien"),
-    "CCJ":      ("judgment",   "Judgment / Lien"),
-    "DRJUD":    ("judgment",   "Judgment / Lien"),
-    "LNCORPTX": ("tax",        "Tax Lien / Tax Deed"),
-    "LNIRS":    ("tax",        "Tax Lien / Tax Deed"),
-    "LNFED":    ("tax",        "Tax Lien / Tax Deed"),
-    "LN":       ("lien",       "Lien"),
-    "LNMECH":   ("lien",       "Lien"),
-    "LNHOA":    ("lien",       "Lien"),
-    "MEDLN":    ("lien",       "Lien"),
-    "PRO":      ("probate",    "Probate / Estate"),
-    "NOC":      ("noc",        "Notice of Commencement"),
-    "RELLP":    ("rellp",      "Release Lis Pendens"),
-}
-
-# Output paths (relative to repo root; script is in scraper/)
+# Output paths
 REPO_ROOT = Path(__file__).resolve().parent.parent
 DASHBOARD_JSON = REPO_ROOT / "dashboard" / "records.json"
 DATA_JSON = REPO_ROOT / "data" / "records.json"
@@ -113,20 +75,7 @@ GHL_CSV = REPO_ROOT / "data" / "ghl_export.csv"
 # Utility helpers
 # ---------------------------------------------------------------------------
 
-def retry(fn, *args, attempts=MAX_RETRIES, delay=RETRY_DELAY, **kwargs):
-    """Call fn(*args, **kwargs) up to `attempts` times, returning the result."""
-    for attempt in range(1, attempts + 1):
-        try:
-            return fn(*args, **kwargs)
-        except Exception as exc:
-            log.warning("Attempt %d/%d failed: %s", attempt, attempts, exc)
-            if attempt < attempts:
-                time.sleep(delay)
-    raise RuntimeError(f"All {attempts} attempts failed for {fn.__name__}")
-
-
 def parse_amount(text: str) -> float:
-    """Extract a float dollar amount from a string like '$123,456.78'."""
     if not text:
         return 0.0
     cleaned = re.sub(r"[^\d.]", "", text.replace(",", ""))
@@ -137,10 +86,6 @@ def parse_amount(text: str) -> float:
 
 
 def split_name(full_name: str):
-    """
-    Return (first, last) by splitting 'LAST, FIRST' or 'FIRST LAST'.
-    Very light-weight — suitable for marketing exports.
-    """
     full_name = (full_name or "").strip()
     if "," in full_name:
         parts = full_name.split(",", 1)
@@ -166,109 +111,91 @@ class ParcelLookup:
     an owner-name lookup keyed by all name variants.
     """
 
-    # Known download endpoints / mirrors (try in order)
-    DBF_URLS = [
+    # Try multiple known PA data URLs
+    PA_PAGES = [
+        "https://www.coj.net/departments/property-appraiser/property-data",
         "https://www.coj.net/departments/property-appraiser/property-data.aspx",
-        # Fallback: direct ZIP if the above page has a direct link
+        "https://paopropertysearch.coj.net/Basic/Download.aspx",
     ]
 
-    # Common DBF file name patterns inside the ZIP
-    DBF_NAMES = ["NAL.dbf", "nal.dbf", "parcel.dbf", "PARCEL.dbf", "parcels.dbf"]
-
     def __init__(self):
-        self._by_name: dict[str, list[dict]] = {}  # name_key -> [parcel_dict, ...]
-
-    # ------------------------------------------------------------------
-    # Download helpers
-    # ------------------------------------------------------------------
+        self._by_name: dict = {}
 
     def _get_dbf_zip_url(self) -> Optional[str]:
-        """Scrape the COJ property-appraiser page to find the bulk data ZIP."""
         session = requests.Session()
-        session.headers.update({"User-Agent": "Mozilla/5.0 (DuvalLeadScraper/1.0)"})
-        try:
-            resp = session.get(self.DBF_URLS[0], timeout=30)
-            resp.raise_for_status()
-            soup = BeautifulSoup(resp.text, "lxml")
-            for a in soup.find_all("a", href=True):
-                href = a["href"]
-                if re.search(r"\.(zip|ZIP)$", href):
-                    if re.search(r"(nal|parcel|bulk|data)", href, re.I):
-                        if href.startswith("http"):
-                            return href
-                        return "https://www.coj.net" + href
-        except Exception as exc:
-            log.warning("Could not scrape PA page for DBF URL: %s", exc)
+        session.headers.update({"User-Agent": "Mozilla/5.0 (DuvalLeadScraper/2.0)"})
+        for pa_url in self.PA_PAGES:
+            try:
+                resp = session.get(pa_url, timeout=30)
+                if resp.status_code == 200:
+                    soup = BeautifulSoup(resp.text, "lxml")
+                    for a in soup.find_all("a", href=True):
+                        href = a["href"]
+                        if re.search(r"\.(zip|ZIP)$", href):
+                            if href.startswith("http"):
+                                return href
+                            # Try to build absolute URL
+                            from urllib.parse import urljoin
+                            return urljoin(pa_url, href)
+            except Exception as exc:
+                log.debug("PA page %s failed: %s", pa_url, exc)
+        # Hard-coded fallback if known
         return None
 
     def _download_zip(self, url: str) -> Optional[bytes]:
-        """Download a ZIP file from url, return raw bytes."""
         try:
             resp = requests.get(url, timeout=120, stream=True)
             resp.raise_for_status()
             return resp.content
         except Exception as exc:
-            log.warning("Failed to download ZIP from %s: %s", url, exc)
+            log.warning("ZIP download failed: %s", exc)
             return None
 
     def _extract_dbf(self, zip_bytes: bytes) -> Optional[Path]:
-        """Extract the first recognisable DBF from a ZIP into a temp file."""
+        priority = ["NAL.dbf", "nal.dbf", "parcel.dbf", "PARCEL.dbf"]
         try:
             with zipfile.ZipFile(BytesIO(zip_bytes)) as zf:
                 names = zf.namelist()
-                for target in self.DBF_NAMES:
+                for target in priority:
                     for name in names:
                         if Path(name).name.lower() == target.lower():
-                            tmp = tempfile.NamedTemporaryFile(
-                                suffix=".dbf", delete=False
-                            )
+                            tmp = tempfile.NamedTemporaryFile(suffix=".dbf", delete=False)
                             tmp.write(zf.read(name))
                             tmp.close()
                             return Path(tmp.name)
-                # Last resort: first .dbf file
                 for name in names:
                     if name.lower().endswith(".dbf"):
-                        tmp = tempfile.NamedTemporaryFile(
-                            suffix=".dbf", delete=False
-                        )
+                        tmp = tempfile.NamedTemporaryFile(suffix=".dbf", delete=False)
                         tmp.write(zf.read(name))
                         tmp.close()
                         return Path(tmp.name)
         except Exception as exc:
-            log.warning("Failed to extract DBF from ZIP: %s", exc)
+            log.warning("DBF extract failed: %s", exc)
         return None
 
-    # ------------------------------------------------------------------
-    # Public API
-    # ------------------------------------------------------------------
-
     def load(self) -> bool:
-        """
-        Try to download and parse the bulk parcel DBF.
-        Returns True if successful, False otherwise (scraper continues without it).
-        """
         try:
-            from dbfread import DBF  # noqa: PLC0415
+            from dbfread import DBF
         except ImportError:
-            log.error("dbfread not installed — parcel lookup unavailable.")
+            log.error("dbfread not installed")
             return False
 
         zip_url = self._get_dbf_zip_url()
         if not zip_url:
-            log.warning("Could not determine DBF ZIP URL — parcel lookup disabled.")
+            log.warning("PA bulk data URL not found — address enrichment disabled.")
             return False
 
-        log.info("Downloading parcel DBF from %s …", zip_url)
+        log.info("Downloading parcel DBF from %s", zip_url)
         zip_bytes = self._download_zip(zip_url)
         if not zip_bytes:
             return False
 
         dbf_path = self._extract_dbf(zip_bytes)
         if not dbf_path:
-            log.warning("No usable DBF found in ZIP — parcel lookup disabled.")
+            log.warning("No DBF found in ZIP")
             return False
 
-        log.info("Parsing DBF: %s", dbf_path)
+        log.info("Parsing parcel DBF…")
         try:
             table = DBF(str(dbf_path), encoding="latin-1", ignore_missing_memofile=True)
             count = 0
@@ -278,7 +205,7 @@ class ParcelLookup:
                     count += 1
                 except Exception:
                     pass
-            log.info("Indexed %d parcel records.", count)
+            log.info("Indexed %d parcel records", count)
         except Exception as exc:
             log.error("DBF parse error: %s", exc)
             return False
@@ -293,15 +220,12 @@ class ParcelLookup:
         return re.sub(r"\s+", " ", name.strip().upper())
 
     def _index_row(self, row: dict):
-        """
-        Index a parcel row under all owner-name variants.
-        Column names differ between PA releases; we try several aliases.
-        """
         def g(*keys):
             for k in keys:
-                v = row.get(k) or row.get(k.upper()) or row.get(k.lower())
-                if v and str(v).strip():
-                    return str(v).strip()
+                for variant in [k, k.upper(), k.lower()]:
+                    v = row.get(variant)
+                    if v and str(v).strip():
+                        return str(v).strip()
             return ""
 
         owner_raw = g("OWN1", "OWNER", "OWNER1", "OWN_NAME")
@@ -310,17 +234,16 @@ class ParcelLookup:
 
         parcel = {
             "owner_raw": owner_raw,
-            "site_addr": g("SITEADDR", "SITE_ADDR", "SITE_ADDRESS"),
+            "site_addr": g("SITEADDR", "SITE_ADDR"),
             "site_city": g("SITE_CITY", "SITECITY"),
-            "site_state": g("SITE_STATE", "SITESTATE") or "FL",
+            "site_state": g("SITE_STATE") or "FL",
             "site_zip": g("SITE_ZIP", "SITEZIP"),
-            "mail_addr": g("MAILADR1", "ADDR_1", "MAIL_ADDR1", "MAILADD1"),
-            "mail_city": g("MAILCITY", "CITY", "MAIL_CITY"),
+            "mail_addr": g("MAILADR1", "ADDR_1", "MAILADD1"),
+            "mail_city": g("MAILCITY", "CITY"),
             "mail_state": g("STATE", "MAIL_STATE") or "FL",
-            "mail_zip": g("MAILZIP", "ZIP", "MAIL_ZIP"),
+            "mail_zip": g("MAILZIP", "ZIP"),
         }
 
-        # Build 3 variants: "FIRST LAST", "LAST FIRST", "LAST, FIRST"
         raw = owner_raw.upper().strip()
         variants = {raw}
         if "," in raw:
@@ -338,14 +261,11 @@ class ParcelLookup:
                 self._by_name.setdefault(norm, []).append(parcel)
 
     def lookup(self, owner: str) -> Optional[dict]:
-        """Return the first matching parcel dict for owner name, or None."""
         if not owner:
             return None
         key = self._norm_key(owner)
-        matches = self._by_name.get(key)
-        if matches:
-            return matches[0]
-        # Fuzzy partial: try first two tokens
+        if key in self._by_name:
+            return self._by_name[key][0]
         tokens = key.split()
         if len(tokens) >= 2:
             partial = tokens[0] + " " + tokens[1]
@@ -355,58 +275,49 @@ class ParcelLookup:
         return None
 
 # ---------------------------------------------------------------------------
-# Seller Score Calculator
+# Seller Score
 # ---------------------------------------------------------------------------
 
-def calculate_score(record: dict, all_records: list[dict]) -> tuple[int, list[str]]:
-    """
-    Compute a 0–100 motivated-seller score and return (score, flags).
-    """
+def calculate_score(record: dict, all_records: list) -> tuple:
     flags = []
-    score = 30  # base
+    score = 30
 
     doc_type = record.get("doc_type", "")
     cat = record.get("cat", "")
     amount = record.get("amount", 0.0)
     filed = record.get("filed", "")
-    prop_address = record.get("prop_address", "")
     owner = record.get("owner", "")
+    prop_address = record.get("prop_address", "")
     owner_upper = owner.upper()
 
-    # Flag: Lis Pendens
-    if doc_type in ("LP", "NOFC"):
+    if doc_type in ("LP", "NTD"):
         flags.append("Lis pendens")
         flags.append("Pre-foreclosure")
         score += 10
 
-    # Flag: Tax lien
-    if doc_type in ("TAXDEED", "LNIRS", "LNFED", "LNCORPTX"):
+    if doc_type in ("TAXDEED", "TXDC"):
         flags.append("Tax lien")
         score += 10
 
-    # Flag: Judgment lien
-    if doc_type in ("JUD", "CCJ", "DRJUD"):
+    if doc_type in ("JDG", "JDGR", "CCCJUDG", "DVJ"):
         flags.append("Judgment lien")
         score += 10
 
-    # Flag: Mechanic lien
-    if doc_type in ("LNMECH", "LN", "LNHOA", "MEDLN"):
+    if doc_type in ("LN", "JVRL"):
         flags.append("Mechanic lien")
         score += 10
 
-    # Flag: Probate / estate
-    if doc_type == "PRO":
+    if doc_type == "PROB":
         flags.append("Probate / estate")
         score += 10
 
-    # LP + FC combo: owner has BOTH a Lis Pendens AND a Foreclosure
+    # LP + related foreclosure combo
     owner_docs = [r.get("doc_type") for r in all_records if r.get("owner", "").upper() == owner_upper]
-    has_lp = any(d in ("LP",) for d in owner_docs)
-    has_fc = any(d in ("NOFC",) for d in owner_docs)
-    if has_lp and has_fc:
+    has_lp = "LP" in owner_docs
+    has_ntd = "NTD" in owner_docs
+    if has_lp and (has_ntd or any(d in ("TAXDEED", "TXDC") for d in owner_docs)):
         score += 20
 
-    # Amount bonus
     if amount > 100_000:
         flags.append("High debt (>$100k)")
         score += 15
@@ -414,7 +325,6 @@ def calculate_score(record: dict, all_records: list[dict]) -> tuple[int, list[st
         flags.append("Significant debt (>$50k)")
         score += 10
 
-    # New this week (+5)
     try:
         filed_date = datetime.strptime(filed, "%Y-%m-%d")
         if (datetime.now() - filed_date).days <= 7:
@@ -423,20 +333,16 @@ def calculate_score(record: dict, all_records: list[dict]) -> tuple[int, list[st
     except Exception:
         pass
 
-    # Has address (+5)
     if prop_address:
         flags.append("Has address")
         score += 5
 
-    # LLC / Corp owner
     corp_keywords = ["LLC", "INC", "CORP", "LTD", "TRUST", "HOLDINGS", "PROPERTIES"]
     if any(kw in owner_upper for kw in corp_keywords):
         flags.append("LLC / corp owner")
         score += 10
 
-    # Deduplicate flags
-    seen = set()
-    unique_flags = []
+    seen, unique_flags = set(), []
     for f in flags:
         if f not in seen:
             unique_flags.append(f)
@@ -450,171 +356,204 @@ def calculate_score(record: dict, all_records: list[dict]) -> tuple[int, list[st
 
 class ClerkScraper:
     """
-    Async Playwright scraper for https://or.duvalclerk.com/
-    Navigates Official Records search, filters by doc type and date range,
-    and collects all result rows.
+    Uses Playwright to navigate the Duval County Clerk portal.
+    - Accepts the disclaimer automatically
+    - Uses the Doc Type search page (/search/SearchTypeDocType)
+    - Interacts with Kendo UI widgets via JavaScript evaluate()
+    - Handles AJAX form submission and paginated results
     """
 
-    SEARCH_URL = f"{CLERK_BASE}/search/index"
-    TIMEOUT = 30_000  # ms
+    SEARCH_URL = f"{CLERK_BASE}/search/SearchTypeDocType"
+    TIMEOUT = 45_000  # ms
 
     def __init__(self, start_date: str, end_date: str):
         self.start_date = start_date  # YYYY-MM-DD
         self.end_date = end_date
 
-    async def fetch_all(self) -> list[dict]:
-        """Return all records for all configured doc types within date range."""
-        all_records: list[dict] = []
+    async def fetch_all(self) -> list:
+        all_records = []
         async with async_playwright() as p:
-            browser = await p.chromium.launch(headless=True)
+            browser = await p.chromium.launch(headless=True, args=["--no-sandbox"])
             context = await browser.new_context(
-                user_agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36"
-                           " (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36"
+                user_agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 "
+                           "(KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36"
             )
             page = await context.new_page()
+            page.set_default_timeout(self.TIMEOUT)
 
-            for doc_type in DOC_TYPES:
-                log.info("Fetching doc type: %s", doc_type)
+            # Accept the disclaimer once
+            accepted = await self._accept_disclaimer(page)
+            if not accepted:
+                log.error("Could not accept disclaimer — aborting.")
+                await browser.close()
+                return []
+
+            for code, (numeric_id, label, cat, cat_label) in DOC_TYPE_CONFIG.items():
+                log.info("Fetching: %s (%s, id=%d)", label, code, numeric_id)
                 try:
-                    records = await self._fetch_doc_type(page, doc_type)
+                    records = await self._fetch_doc_type(page, code, numeric_id, label, cat, cat_label)
                     log.info("  → %d records", len(records))
                     all_records.extend(records)
                 except Exception:
-                    log.error("Error fetching %s:\n%s", doc_type, traceback.format_exc())
+                    log.error("Error fetching %s:\n%s", code, traceback.format_exc())
 
             await browser.close()
-
         return all_records
 
-    async def _fetch_doc_type(self, page, doc_type: str) -> list[dict]:
-        """Search for a single doc type and collect all paginated results."""
-        records: list[dict] = []
+    # ------------------------------------------------------------------
+    # Disclaimer
+    # ------------------------------------------------------------------
+
+    async def _accept_disclaimer(self, page) -> bool:
+        """Navigate to the portal root and click 'I accept the conditions above.'"""
+        for attempt in range(1, MAX_RETRIES + 1):
+            try:
+                await page.goto(CLERK_BASE + "/", timeout=self.TIMEOUT)
+                await page.wait_for_load_state("networkidle", timeout=self.TIMEOUT)
+
+                # Click accept button if present
+                btn = await page.query_selector("input[value*='accept']")
+                if not btn:
+                    btn = await page.query_selector("input#btnButton")
+                if not btn:
+                    btn = await page.query_selector("button:has-text('accept')")
+
+                if btn:
+                    await btn.click()
+                    await page.wait_for_load_state("networkidle", timeout=self.TIMEOUT)
+                    log.info("Disclaimer accepted.")
+                else:
+                    # Already past the disclaimer
+                    log.info("Disclaimer not shown (already accepted).")
+                return True
+            except Exception as exc:
+                log.warning("Disclaimer attempt %d/%d failed: %s", attempt, MAX_RETRIES, exc)
+                await asyncio.sleep(RETRY_DELAY)
+        return False
+
+    # ------------------------------------------------------------------
+    # Fetch one doc type
+    # ------------------------------------------------------------------
+
+    async def _fetch_doc_type(self, page, code: str, numeric_id: int,
+                               label: str, cat: str, cat_label: str) -> list:
+        records = []
 
         for attempt in range(1, MAX_RETRIES + 1):
             try:
                 await page.goto(self.SEARCH_URL, timeout=self.TIMEOUT)
                 await page.wait_for_load_state("networkidle", timeout=self.TIMEOUT)
+                # Brief pause for Kendo widgets to initialize
+                await asyncio.sleep(1.5)
                 break
-            except PWTimeout:
-                log.warning("Timeout loading search page (attempt %d/%d)", attempt, MAX_RETRIES)
+            except Exception as exc:
+                log.warning("Page load attempt %d/%d: %s", attempt, MAX_RETRIES, exc)
                 if attempt == MAX_RETRIES:
                     return records
                 await asyncio.sleep(RETRY_DELAY)
 
-        # Fill the search form
         try:
-            # Select document type
-            await self._select_doc_type(page, doc_type)
-
-            # Date range
-            await self._fill_date_range(page)
-
-            # Submit
-            await self._submit_search(page)
-
+            await self._set_doc_type(page, numeric_id)
+            await self._set_date_range(page)
+            await self._submit_form(page)
+            await asyncio.sleep(2)  # allow AJAX to settle
         except Exception:
-            log.error("Form interaction error for %s:\n%s", doc_type, traceback.format_exc())
+            log.error("Form setup error for %s:\n%s", code, traceback.format_exc())
             return records
 
-        # Collect all pages
+        # Collect all pages of results
         page_num = 0
         while True:
             page_num += 1
             try:
-                page_records = await self._parse_results_page(page, doc_type)
+                page_records = await self._parse_results(page, code, label, cat, cat_label)
                 records.extend(page_records)
 
-                # Try to go to next page
                 has_next = await self._go_next_page(page)
                 if not has_next:
                     break
-
                 await page.wait_for_load_state("networkidle", timeout=self.TIMEOUT)
+                await asyncio.sleep(1)
             except Exception:
-                log.error("Error parsing page %d for %s:\n%s",
-                          page_num, doc_type, traceback.format_exc())
+                log.error("Parse error on page %d for %s:\n%s",
+                          page_num, code, traceback.format_exc())
                 break
 
         return records
 
-    async def _select_doc_type(self, page, doc_type: str):
-        """
-        Handle doc-type selection.  The Duval clerk portal uses a combo-box /
-        drop-down — try several selector strategies.
-        """
-        selectors = [
-            f"select[name*='DocType'] option[value='{doc_type}']",
-            f"select[id*='DocType'] option[value='{doc_type}']",
-            f"select option[value='{doc_type}']",
-        ]
-        for sel in selectors:
-            try:
-                opt = await page.query_selector(sel)
-                if opt:
-                    parent = await opt.evaluate_handle("el => el.parentElement")
-                    await parent.select_option(value=doc_type)
-                    return
-            except Exception:
-                pass
+    # ------------------------------------------------------------------
+    # Form interaction
+    # ------------------------------------------------------------------
 
-        # Try free-text search field
-        text_selectors = [
-            "input[placeholder*='Document Type']",
-            "input[name*='DocType']",
-            "input[id*='DocType']",
-        ]
-        for sel in text_selectors:
-            try:
-                inp = await page.query_selector(sel)
-                if inp:
-                    await inp.fill(doc_type)
-                    return
-            except Exception:
-                pass
+    async def _set_doc_type(self, page, numeric_id: int):
+        """Set the Kendo ComboBox value using its JavaScript API."""
+        # The DocTypes hidden textarea stores the actual value (numeric ID)
+        # DocTypesDisplay is the visible Kendo ComboBox
+        result = await page.evaluate(f"""
+            () => {{
+                try {{
+                    var combo = jQuery('#DocTypesDisplay').data('kendoComboBox');
+                    if (combo) {{
+                        combo.value('{numeric_id}');
+                        combo.trigger('change');
+                        // Also set the hidden textarea
+                        jQuery('#DocTypes').val('{numeric_id}');
+                        return 'kendo-ok';
+                    }}
+                    // Fallback: set the hidden textarea directly
+                    jQuery('#DocTypes').val('{numeric_id}');
+                    return 'fallback-ok';
+                }} catch(e) {{
+                    return 'error: ' + e.toString();
+                }}
+            }}
+        """)
+        log.debug("Doc type set result: %s", result)
 
-        log.warning("Could not select doc type %s — continuing anyway", doc_type)
-
-    async def _fill_date_range(self, page):
-        """Fill start and end date fields."""
+    async def _set_date_range(self, page):
+        """Set the date range to 'Last 7 Days' via Kendo DropDownList."""
         start_fmt = datetime.strptime(self.start_date, "%Y-%m-%d").strftime("%m/%d/%Y")
         end_fmt = datetime.strptime(self.end_date, "%Y-%m-%d").strftime("%m/%d/%Y")
 
-        date_field_pairs = [
-            (["input[name*='StartDate']", "input[id*='StartDate']", "input[placeholder*='Start']"],
-             ["input[name*='EndDate']", "input[id*='EndDate']", "input[placeholder*='End']"]),
-            (["input[name*='FromDate']", "input[id*='FromDate']"],
-             ["input[name*='ToDate']", "input[id*='ToDate']"]),
-            (["input[name*='DateFrom']", "input[id*='DateFrom']"],
-             ["input[name*='DateTo']", "input[id*='DateTo']"]),
-        ]
+        result = await page.evaluate(f"""
+            () => {{
+                try {{
+                    // Try Kendo date range dropdown first
+                    var ddl = jQuery('#DateRangeDropDown').data('kendoDropDownList');
+                    if (ddl) {{
+                        ddl.value('Last7Days');
+                        ddl.trigger('change');
+                        return 'kendo-date-ok';
+                    }}
+                    // Fallback: set date fields directly
+                    jQuery('#RecordDateFrom').val('{start_fmt}');
+                    jQuery('#RecordDateTo').val('{end_fmt}');
+                    return 'date-fields-ok';
+                }} catch(e) {{
+                    return 'error: ' + e.toString();
+                }}
+            }}
+        """)
+        log.debug("Date range set result: %s", result)
+        await asyncio.sleep(0.5)
 
-        for start_sels, end_sels in date_field_pairs:
-            for s_sel in start_sels:
-                try:
-                    inp = await page.query_selector(s_sel)
-                    if inp:
-                        await inp.fill(start_fmt)
-                        break
-                except Exception:
-                    pass
-            for e_sel in end_sels:
-                try:
-                    inp = await page.query_selector(e_sel)
-                    if inp:
-                        await inp.fill(end_fmt)
-                        return
-                except Exception:
-                    pass
+        # Also try to fill the date inputs directly as backup
+        for sel, val in [("#RecordDateFrom", start_fmt), ("#RecordDateTo", end_fmt)]:
+            try:
+                inp = await page.query_selector(sel)
+                if inp:
+                    await inp.fill(val)
+            except Exception:
+                pass
 
-    async def _submit_search(self, page):
-        """Click the search / submit button."""
+    async def _submit_form(self, page):
+        """Click the search button to submit the form."""
         btn_selectors = [
-            "button[type='submit']",
             "input[type='submit']",
+            "button[type='submit']",
+            "input.t-button[value*='Search']",
             "button:has-text('Search')",
-            "a:has-text('Search')",
             "#btnSearch",
-            "input[value='Search']",
         ]
         for sel in btn_selectors:
             try:
@@ -625,48 +564,59 @@ class ClerkScraper:
                     return
             except Exception:
                 pass
-        # Try pressing Enter in the form
-        await page.keyboard.press("Enter")
+
+        # Try form submit via JS
+        await page.evaluate("document.getElementById('schfrm') && document.getElementById('schfrm').submit()")
         await page.wait_for_load_state("networkidle", timeout=self.TIMEOUT)
 
-    async def _parse_results_page(self, page, doc_type: str) -> list[dict]:
-        """Parse the current results page and return a list of record dicts."""
+    # ------------------------------------------------------------------
+    # Results parsing
+    # ------------------------------------------------------------------
+
+    async def _parse_results(self, page, code: str, label: str, cat: str, cat_label: str) -> list:
         records = []
         try:
             content = await page.content()
-            soup = BeautifulSoup(content, "lxml")
             current_url = page.url
+            soup = BeautifulSoup(content, "lxml")
 
-            # Try to find a results table
-            table = soup.find("table", class_=re.compile(r"result|search|grid|data", re.I))
-            if not table:
-                table = soup.find("table")
-            if not table:
+            # Look for "No records found" indicator
+            text = soup.get_text()
+            if re.search(r"no records found|0 records|no results", text, re.I):
                 return records
+
+            # Find the results table (Kendo grid or standard table)
+            table = (
+                soup.find("table", class_=re.compile(r"k-grid|result|search", re.I))
+                or soup.find("div", class_="k-grid-content")
+                or soup.find("table")
+            )
+            if not table:
+                # Try a div-based layout
+                return self._parse_div_results(soup, code, label, cat, cat_label, current_url)
 
             rows = table.find_all("tr")
-            if not rows:
+            if len(rows) < 2:
                 return records
 
-            # Determine headers from first row
-            headers = []
-            header_row = rows[0]
-            for th in header_row.find_all(["th", "td"]):
-                headers.append(th.get_text(strip=True).lower())
+            # Headers
+            headers = [th.get_text(strip=True).lower() for th in rows[0].find_all(["th", "td"])]
 
-            def col(row_cells, *names):
+            def col(cells, *names):
                 for name in names:
                     for i, h in enumerate(headers):
-                        if name in h and i < len(row_cells):
-                            return row_cells[i].get_text(strip=True)
+                        if name in h and i < len(cells):
+                            txt = cells[i].get_text(strip=True)
+                            if txt:
+                                return txt
                 return ""
 
             for row in rows[1:]:
                 cells = row.find_all("td")
-                if not cells:
+                if not cells or len(cells) < 2:
                     continue
                 try:
-                    # Doc number — look for an <a> link
+                    # Instrument / doc number — prefer linked text
                     doc_num = ""
                     clerk_url = ""
                     for cell in cells:
@@ -679,39 +629,31 @@ class ClerkScraper:
                             doc_num = a.get_text(strip=True)
                             break
                     if not doc_num:
-                        doc_num = col(cells, "doc", "instrument", "book", "number")
+                        doc_num = col(cells, "instrument", "doc", "number", "book")
 
                     # Filed date
-                    filed_raw = col(cells, "date", "filed", "record")
-                    filed = ""
-                    for fmt in ("%m/%d/%Y", "%Y-%m-%d", "%m-%d-%Y"):
-                        try:
-                            filed = datetime.strptime(filed_raw, fmt).strftime("%Y-%m-%d")
-                            break
-                        except ValueError:
-                            pass
+                    filed_raw = col(cells, "record date", "filed", "date")
+                    filed = self._parse_date(filed_raw)
 
-                    # Grantor / owner
-                    owner = col(cells, "grantor", "owner", "party1", "seller")
+                    # Grantor (owner)
+                    owner = col(cells, "grantor", "owner", "party 1", "name")
 
                     # Grantee
-                    grantee = col(cells, "grantee", "buyer", "party2")
+                    grantee = col(cells, "grantee", "buyer", "party 2")
 
-                    # Amount
-                    amount_raw = col(cells, "amount", "consideration", "value", "debt")
+                    # Amount / consideration
+                    amount_raw = col(cells, "consideration", "amount", "value", "debt")
                     amount = parse_amount(amount_raw)
 
                     # Legal description
                     legal = col(cells, "legal", "description", "property")
-
-                    cat, cat_label = CAT_MAP.get(doc_type, ("other", doc_type))
 
                     if not doc_num and not owner:
                         continue
 
                     records.append({
                         "doc_num": doc_num,
-                        "doc_type": doc_type,
+                        "doc_type": code,
                         "filed": filed,
                         "cat": cat,
                         "cat_label": cat_label,
@@ -732,81 +674,129 @@ class ClerkScraper:
                         "score": 0,
                     })
                 except Exception:
-                    log.debug("Row parse error:\n%s", traceback.format_exc())
-                    continue
+                    log.debug("Row error: %s", traceback.format_exc())
+
         except Exception:
-            log.error("Page parse error:\n%s", traceback.format_exc())
+            log.error("Results parse error:\n%s", traceback.format_exc())
         return records
 
+    def _parse_div_results(self, soup, code, label, cat, cat_label, current_url) -> list:
+        """Fallback: parse div-based result layouts (e.g. Kendo listview)."""
+        records = []
+        divs = soup.find_all("div", class_=re.compile(r"result|record|item", re.I))
+        for div in divs:
+            try:
+                text = div.get_text(separator=" | ", strip=True)
+                a = div.find("a", href=True)
+                clerk_url = ""
+                if a:
+                    href = a["href"]
+                    if not href.startswith("http"):
+                        href = CLERK_BASE + href
+                    clerk_url = href
+
+                # Try to extract instrument number from the link or text
+                doc_num_match = re.search(r"(\d{7,})", text)
+                doc_num = doc_num_match.group(1) if doc_num_match else ""
+                if not doc_num and not clerk_url:
+                    continue
+
+                records.append({
+                    "doc_num": doc_num,
+                    "doc_type": code,
+                    "filed": "",
+                    "cat": cat,
+                    "cat_label": cat_label,
+                    "owner": "",
+                    "grantee": "",
+                    "amount": 0.0,
+                    "legal": "",
+                    "prop_address": "",
+                    "prop_city": "",
+                    "prop_state": "FL",
+                    "prop_zip": "",
+                    "mail_address": "",
+                    "mail_city": "",
+                    "mail_state": "",
+                    "mail_zip": "",
+                    "clerk_url": clerk_url or current_url,
+                    "flags": [],
+                    "score": 0,
+                })
+            except Exception:
+                pass
+        return records
+
+    @staticmethod
+    def _parse_date(text: str) -> str:
+        for fmt in ("%m/%d/%Y", "%Y-%m-%d", "%m-%d-%Y", "%m/%d/%y"):
+            try:
+                return datetime.strptime(text.strip(), fmt).strftime("%Y-%m-%d")
+            except ValueError:
+                pass
+        return ""
+
+    # ------------------------------------------------------------------
+    # Pagination
+    # ------------------------------------------------------------------
+
     async def _go_next_page(self, page) -> bool:
-        """
-        Attempt to navigate to the next result page.
-        Returns True if successful (page changed), False if we're on the last page.
-        """
+        """Try to advance to the next results page. Returns True if navigated."""
+        # Kendo Grid pager
         next_selectors = [
+            ".k-pager-next:not(.k-state-disabled)",
+            "a.k-i-arrow-e:not(.k-state-disabled)",
+            "a[title='Go to the next page']",
             "a:has-text('Next')",
-            "a:has-text('>')",
-            "a[rel='next']",
-            ".pager .next a",
-            "input[value='Next']",
-            "button:has-text('Next')",
+            ".t-arrow-next:not(.t-state-disabled)",
         ]
         for sel in next_selectors:
             try:
                 btn = await page.query_selector(sel)
                 if btn:
-                    is_disabled = await btn.get_attribute("disabled")
-                    cls = await btn.get_attribute("class") or ""
-                    if is_disabled or "disabled" in cls.lower():
-                        return False
                     prev_url = page.url
                     await btn.click()
+                    await asyncio.sleep(1.5)
                     await page.wait_for_load_state("networkidle", timeout=self.TIMEOUT)
-                    return page.url != prev_url
+                    return True
             except Exception:
                 pass
 
-        # Try __doPostBack approach for ASP.NET grids
+        # ASP.NET __doPostBack pagination
         try:
             content = await page.content()
             soup = BeautifulSoup(content, "lxml")
-            links = soup.find_all("a", href=re.compile(r"__doPostBack"))
-            for a in links:
-                if re.search(r"next|page|>", a.get_text(), re.I):
-                    href = a["href"]
-                    event_target = re.search(r"__doPostBack\('([^']+)'", href)
-                    event_arg = re.search(r"__doPostBack\('[^']+','([^']+)'", href)
-                    if event_target:
-                        await page.evaluate(
-                            f"__doPostBack('{event_target.group(1)}', "
-                            f"'{event_arg.group(1) if event_arg else ''}')"
-                        )
-                        await page.wait_for_load_state("networkidle", timeout=self.TIMEOUT)
-                        return True
+            for a in soup.find_all("a", href=True):
+                href = a.get("href", "")
+                text = a.get_text(strip=True)
+                if "__doPostBack" in href and re.search(r"next|>|»", text, re.I):
+                    await page.evaluate(f"eval(unescape('{href}'))")
+                    await page.wait_for_load_state("networkidle", timeout=self.TIMEOUT)
+                    return True
         except Exception:
             pass
 
         return False
 
 # ---------------------------------------------------------------------------
-# Enrich records with parcel data
+# Enrich with parcel data
 # ---------------------------------------------------------------------------
 
-def enrich_with_parcel(records: list[dict], parcel: ParcelLookup) -> list[dict]:
+def enrich_with_parcel(records: list, parcel: ParcelLookup) -> list:
     for rec in records:
         try:
             match = parcel.lookup(rec.get("owner", ""))
             if match:
                 rec["prop_address"] = match.get("site_addr", "")
-                rec["prop_city"] = match.get("site_city", "")
-                rec["prop_state"] = match.get("site_state", "FL")
-                rec["prop_zip"] = match.get("site_zip", "")
+                rec["prop_city"]    = match.get("site_city", "")
+                rec["prop_state"]   = match.get("site_state", "FL")
+                rec["prop_zip"]     = match.get("site_zip", "")
                 rec["mail_address"] = match.get("mail_addr", "")
-                rec["mail_city"] = match.get("mail_city", "")
-                rec["mail_state"] = match.get("mail_state", "FL")
-                rec["mail_zip"] = match.get("mail_zip", "")
+                rec["mail_city"]    = match.get("mail_city", "")
+                rec["mail_state"]   = match.get("mail_state", "FL")
+                rec["mail_zip"]     = match.get("mail_zip", "")
         except Exception:
-            log.debug("Parcel enrich error: %s", traceback.format_exc())
+            pass
     return records
 
 # ---------------------------------------------------------------------------
@@ -814,29 +804,16 @@ def enrich_with_parcel(records: list[dict], parcel: ParcelLookup) -> list[dict]:
 # ---------------------------------------------------------------------------
 
 GHL_COLUMNS = [
-    "First Name",
-    "Last Name",
-    "Mailing Address",
-    "Mailing City",
-    "Mailing State",
-    "Mailing Zip",
-    "Property Address",
-    "Property City",
-    "Property State",
-    "Property Zip",
-    "Lead Type",
-    "Document Type",
-    "Date Filed",
-    "Document Number",
-    "Amount/Debt Owed",
-    "Seller Score",
-    "Motivated Seller Flags",
-    "Source",
-    "Public Records URL",
+    "First Name", "Last Name",
+    "Mailing Address", "Mailing City", "Mailing State", "Mailing Zip",
+    "Property Address", "Property City", "Property State", "Property Zip",
+    "Lead Type", "Document Type", "Date Filed", "Document Number",
+    "Amount/Debt Owed", "Seller Score", "Motivated Seller Flags",
+    "Source", "Public Records URL",
 ]
 
 
-def write_ghl_csv(records: list[dict], path: Path):
+def write_ghl_csv(records: list, path: Path):
     path.parent.mkdir(parents=True, exist_ok=True)
     with open(path, "w", newline="", encoding="utf-8") as f:
         writer = csv.DictWriter(f, fieldnames=GHL_COLUMNS, extrasaction="ignore")
@@ -855,7 +832,7 @@ def write_ghl_csv(records: list[dict], path: Path):
                 "Property State": rec.get("prop_state", "FL"),
                 "Property Zip": rec.get("prop_zip", ""),
                 "Lead Type": rec.get("cat_label", ""),
-                "Document Type": DOC_TYPE_LABELS.get(rec.get("doc_type", ""), rec.get("doc_type", "")),
+                "Document Type": rec.get("doc_type", ""),
                 "Date Filed": rec.get("filed", ""),
                 "Document Number": rec.get("doc_num", ""),
                 "Amount/Debt Owed": rec.get("amount", ""),
@@ -867,7 +844,7 @@ def write_ghl_csv(records: list[dict], path: Path):
     log.info("GHL CSV saved: %s (%d rows)", path, len(records))
 
 # ---------------------------------------------------------------------------
-# Main entry point
+# Main
 # ---------------------------------------------------------------------------
 
 async def main():
@@ -876,35 +853,32 @@ async def main():
     start_str = start_date.strftime("%Y-%m-%d")
     end_str = end_date.strftime("%Y-%m-%d")
 
-    log.info("=== Duval County Motivated Seller Scraper ===")
+    log.info("=== Duval County Motivated Seller Scraper v2 ===")
     log.info("Date range: %s → %s", start_str, end_str)
-    log.info("Doc types: %s", ", ".join(DOC_TYPES))
+    log.info("Doc types: %s", ", ".join(DOC_TYPE_CONFIG.keys()))
 
-    # 1. Load parcel lookup
+    # Load parcel lookup
     parcel = ParcelLookup()
     parcel_ok = parcel.load()
     if not parcel_ok:
-        log.warning("Parcel lookup unavailable — address fields will be empty.")
+        log.warning("Parcel enrichment disabled.")
 
-    # 2. Scrape clerk portal
+    # Scrape clerk portal
     scraper = ClerkScraper(start_str, end_str)
     records = await scraper.fetch_all()
-    log.info("Total raw records collected: %d", len(records))
+    log.info("Total raw records: %d", len(records))
 
-    # 3. Enrich with parcel data
+    # Enrich + score
     if parcel_ok:
         records = enrich_with_parcel(records, parcel)
 
-    # 4. Score all records
     for rec in records:
         score, flags = calculate_score(rec, records)
         rec["score"] = score
         rec["flags"] = flags
 
-    # Sort by score descending
     records.sort(key=lambda r: r.get("score", 0), reverse=True)
 
-    # 5. Build output payload
     fetched_at = datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ")
     with_address = sum(1 for r in records if r.get("prop_address"))
     payload = {
@@ -916,17 +890,14 @@ async def main():
         "records": records,
     }
 
-    # 6. Write JSON output files
     for out_path in [DASHBOARD_JSON, DATA_JSON]:
         out_path.parent.mkdir(parents=True, exist_ok=True)
         with open(out_path, "w", encoding="utf-8") as f:
             json.dump(payload, f, indent=2, ensure_ascii=False, default=str)
         log.info("JSON saved: %s", out_path)
 
-    # 7. Write GHL CSV
     write_ghl_csv(records, GHL_CSV)
-
-    log.info("Done. %d records, %d with property address.", len(records), with_address)
+    log.info("Done. %d records, %d with address.", len(records), with_address)
 
 
 if __name__ == "__main__":
