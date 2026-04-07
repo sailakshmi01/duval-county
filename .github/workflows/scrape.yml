@@ -1,0 +1,94 @@
+name: Duval County Lead Scraper
+
+on:
+  schedule:
+    # Run daily at 7:00 AM UTC (3:00 AM ET)
+    - cron: "0 7 * * *"
+  workflow_dispatch:
+    inputs:
+      lookback_days:
+        description: "Number of days to look back (default: 7)"
+        required: false
+        default: "7"
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  scrape:
+    name: Scrape Clerk Portal & Export
+    runs-on: ubuntu-22.04
+    timeout-minutes: 60
+
+    env:
+      LOOKBACK_DAYS: ${{ github.event.inputs.lookback_days || '7' }}
+
+    steps:
+      # ---------------------------------------------------------------
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      # ---------------------------------------------------------------
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      # ---------------------------------------------------------------
+      - name: Cache pip packages
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/pip
+          key: pip-${{ hashFiles('scraper/requirements.txt') }}
+          restore-keys: |
+            pip-
+
+      # ---------------------------------------------------------------
+      - name: Install Python dependencies
+        run: pip install --upgrade pip && pip install -r scraper/requirements.txt
+
+      # ---------------------------------------------------------------
+      - name: Install Playwright browsers
+        run: python -m playwright install --with-deps chromium
+
+      # ---------------------------------------------------------------
+      - name: Run scraper
+        run: python scraper/fetch.py
+        env:
+          LOOKBACK_DAYS: ${{ env.LOOKBACK_DAYS }}
+
+      # ---------------------------------------------------------------
+      - name: Commit and push records
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add dashboard/records.json data/records.json data/ghl_export.csv || true
+          # Only commit if there are changes
+          git diff --cached --quiet && echo "No changes to commit" && exit 0
+          TOTAL=$(python -c "import json,sys; d=json.load(open('dashboard/records.json')); print(d.get('total',0))")
+          git commit -m "chore: update leads [${TOTAL} records] $(date -u +'%Y-%m-%d')"
+          git push
+
+      # ---------------------------------------------------------------
+      - name: Upload dashboard artifact for Pages
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: dashboard/
+
+  # -----------------------------------------------------------------
+  deploy-pages:
+    name: Deploy Dashboard to GitHub Pages
+    needs: scrape
+    runs-on: ubuntu-22.04
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
