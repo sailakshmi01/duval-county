@@ -20,7 +20,7 @@ jobs:
   scrape:
     name: Scrape Clerk Portal & Export
     runs-on: ubuntu-22.04
-    timeout-minutes: 60
+    timeout-minutes: 30
 
     env:
       LOOKBACK_DAYS: ${{ github.event.inputs.lookback_days || '7' }}
@@ -33,44 +33,35 @@ jobs:
           fetch-depth: 0
 
       # ---------------------------------------------------------------
-      - name: Set up Python 3.11
-        uses: actions/setup-python@v5
+      - name: Set up Node.js 20
+        uses: actions/setup-node@v4
         with:
-          python-version: "3.11"
+          node-version: "20"
 
       # ---------------------------------------------------------------
-      - name: Cache pip packages
-        uses: actions/cache@v4
-        with:
-          path: ~/.cache/pip
-          key: pip-${{ hashFiles('scraper/requirements.txt') }}
-          restore-keys: |
-            pip-
-
-      # ---------------------------------------------------------------
-      - name: Install Python dependencies
-        run: pip install --upgrade pip && pip install -r scraper/requirements.txt
-
-      # ---------------------------------------------------------------
-      - name: Install Playwright browsers
-        run: python -m playwright install --with-deps chromium
+      - name: Install scraper dependencies
+        working-directory: scraper
+        run: npm install
 
       # ---------------------------------------------------------------
       - name: Run scraper
-        run: python scraper/fetch.py
+        working-directory: scraper
         env:
           LOOKBACK_DAYS: ${{ env.LOOKBACK_DAYS }}
+          # Uses GITHUB_TOKEN to push data files directly from the script
+          GITHUB_PERSONAL_ACCESS_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: node scrape.js
 
       # ---------------------------------------------------------------
       - name: Commit and push records
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
+          git pull --rebase origin main || true
           git add dashboard/records.json data/records.json data/ghl_export.csv || true
-          # Only commit if there are changes
           git diff --cached --quiet && echo "No changes to commit" && exit 0
-          TOTAL=$(python -c "import json,sys; d=json.load(open('dashboard/records.json')); print(d.get('total',0))")
-          git commit -m "chore: update leads [${TOTAL} records] $(date -u +'%Y-%m-%d')"
+          TOTAL=$(node -e "const d=require('./dashboard/records.json'); console.log(d.total||0)")
+          git commit -m "data: ${TOTAL} leads scraped $(date -u +'%Y-%m-%d')"
           git push
 
       # ---------------------------------------------------------------
