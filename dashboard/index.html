@@ -192,7 +192,9 @@ let allRecords = [];
 
 async function loadData() {
   try {
-    const res = await fetch('records.json?_=' + Date.now());
+    // Load directly from raw GitHub so data is always fresh (no Pages redeploy needed)
+    const RAW = 'https://raw.githubusercontent.com/sailakshmi01/duval-county/main/dashboard/records.json';
+    const res = await fetch(RAW + '?_=' + Date.now());
     const data = await res.json();
     allRecords = data.records || [];
 
