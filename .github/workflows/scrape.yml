@@ -53,16 +53,8 @@ jobs:
         run: node scrape.js
 
       # ---------------------------------------------------------------
-      - name: Commit and push records
-        run: |
-          git config user.name  "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git pull --rebase origin main || true
-          git add dashboard/records.json data/records.json data/ghl_export.csv || true
-          git diff --cached --quiet && echo "No changes to commit" && exit 0
-          TOTAL=$(node -e "const d=require('./dashboard/records.json'); console.log(d.total||0)")
-          git commit -m "data: ${TOTAL} leads scraped $(date -u +'%Y-%m-%d')"
-          git push
+      # Data files are already pushed to GitHub via the scraper's built-in API push.
+      # We only need to upload the dashboard folder for Pages deployment.
 
       # ---------------------------------------------------------------
       - name: Upload dashboard artifact for Pages
