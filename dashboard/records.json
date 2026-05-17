@@ -1,28 +1,28 @@
 {
-  "fetched_at": "2026-05-16T08:48:53.871Z",
+  "fetched_at": "2026-05-17T09:06:58.973Z",
   "source": "Florida County Clerks of Courts",
-  "date_range": "2026-05-09 to 2026-05-16",
-  "total": 2286,
+  "date_range": "2026-05-10 to 2026-05-17",
+  "total": 2267,
   "with_address": 0,
   "by_county": {
-    "Duval": 2286
+    "Duval": 2267
   },
   "by_type": {
     "CERTDEED": 17,
-    "FS": 55,
+    "FS": 56,
     "PROB": 85,
     "LP": 41,
-    "JDG": 454,
-    "JDGS": 485,
-    "NOC": 677,
-    "RELEASE": 157,
+    "JDG": 455,
+    "JDGS": 482,
+    "NOC": 658,
+    "RELEASE": 155,
     "PTL_REL": 21,
     "JDGR": 12,
-    "CCCJUDG": 61,
-    "LN": 151,
+    "CCCJUDG": 60,
+    "LN": 156,
     "DVJ": 20,
     "NOTCONT": 1,
-    "DTH": 43,
+    "DTH": 42,
     "DVJMV": 6
   },
   "records": [
@@ -4300,34 +4300,6 @@
       "score": 55
     },
     {
-      "doc_num": "2026109287",
-      "doc_type": "NOC",
-      "doc_label": "Notice of Commencement",
-      "filed": "",
-      "cat": "noc",
-      "cat_label": "Notice of Commencement",
-      "county": "Duval",
-      "state": "FL",
-      "owner": "BRUZZ ROOFING INC",
-      "grantee": "GUADALUPE EDWIN RODRIGUEZ",
-      "amount": 0,
-      "legal": "L 144 B 3 JACKSONVILLE HEIGHTS SEC 11-3S-25E",
-      "prop_address": "",
-      "prop_city": "",
-      "prop_state": "FL",
-      "prop_zip": "",
-      "mail_address": "",
-      "mail_city": "",
-      "mail_state": "",
-      "mail_zip": "",
-      "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026109287",
-      "flags": [
-        "3 distress docs",
-        "LLC / corp owner"
-      ],
-      "score": 55
-    },
-    {
       "doc_num": "2026109802",
       "doc_type": "NOC",
       "doc_label": "Notice of Commencement",
@@ -6708,34 +6680,6 @@
       "score": 55
     },
     {
-      "doc_num": "2026112969",
-      "doc_type": "NOC",
-      "doc_label": "Notice of Commencement",
-      "filed": "",
-      "cat": "noc",
-      "cat_label": "Notice of Commencement",
-      "county": "Duval",
-      "state": "FL",
-      "owner": "BRUZZ ROOFING INC",
-      "grantee": "SHELBY ASHLEY",
-      "amount": 0,
-      "legal": "L 5 B 2 BENTIN ESTATES SEC 08 2S 29E",
-      "prop_address": "",
-      "prop_city": "",
-      "prop_state": "FL",
-      "prop_zip": "",
-      "mail_address": "",
-      "mail_city": "",
-      "mail_state": "",
-      "mail_zip": "",
-      "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026112969",
-      "flags": [
-        "3 distress docs",
-        "LLC / corp owner"
-      ],
-      "score": 55
-    },
-    {
       "doc_num": "2026113036",
       "doc_type": "NOC",
       "doc_label": "Notice of Commencement",
@@ -7093,34 +7037,6 @@
       "mail_state": "",
       "mail_zip": "",
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026113583",
-      "flags": [
-        "3 distress docs",
-        "LLC / corp owner"
-      ],
-      "score": 55
-    },
-    {
-      "doc_num": "2026113710",
-      "doc_type": "NOC",
-      "doc_label": "Notice of Commencement",
-      "filed": "",
-      "cat": "noc",
-      "cat_label": "Notice of Commencement",
-      "county": "Duval",
-      "state": "FL",
-      "owner": "BRUZZ ROOFING INC",
-      "grantee": "WILLIAMS JEFFREY",
-      "amount": 0,
-      "legal": "L 6 THE SPRINGS SEC 30 2S 25E",
-      "prop_address": "",
-      "prop_city": "",
-      "prop_state": "FL",
-      "prop_zip": "",
-      "mail_address": "",
-      "mail_city": "",
-      "mail_state": "",
-      "mail_zip": "",
-      "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026113710",
       "flags": [
         "3 distress docs",
         "LLC / corp owner"
@@ -9060,6 +8976,34 @@
       "score": 50
     },
     {
+      "doc_num": "2026114879",
+      "doc_type": "JDG",
+      "doc_label": "Judgment",
+      "filed": "",
+      "cat": "judgment",
+      "cat_label": "Judgment / Lien",
+      "county": "Duval",
+      "state": "FL",
+      "owner": "ALLRED DAVID BENJAMIN",
+      "grantee": "FLORIDA STATE OF",
+      "amount": 0,
+      "legal": "",
+      "prop_address": "",
+      "prop_city": "",
+      "prop_state": "FL",
+      "prop_zip": "",
+      "mail_address": "",
+      "mail_city": "",
+      "mail_state": "",
+      "mail_zip": "",
+      "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026114879",
+      "flags": [
+        "Judgment lien",
+        "Multiple distress docs"
+      ],
+      "score": 50
+    },
+    {
       "doc_num": "2026109655",
       "doc_type": "JDGR",
       "doc_label": "Judgment / Restitution",
@@ -10565,6 +10509,34 @@
       "mail_state": "",
       "mail_zip": "",
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026114839",
+      "flags": [
+        "Judgment lien",
+        "Multiple distress docs"
+      ],
+      "score": 50
+    },
+    {
+      "doc_num": "2026114882",
+      "doc_type": "JDGS",
+      "doc_label": "Judgment / Sentence",
+      "filed": "",
+      "cat": "judgment",
+      "cat_label": "Judgment / Lien",
+      "county": "Duval",
+      "state": "FL",
+      "owner": "ALLRED DAVID BENJAMIN",
+      "grantee": "FLORIDA STATE OF",
+      "amount": 0,
+      "legal": "",
+      "prop_address": "",
+      "prop_city": "",
+      "prop_state": "FL",
+      "prop_zip": "",
+      "mail_address": "",
+      "mail_city": "",
+      "mail_state": "",
+      "mail_zip": "",
+      "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026114882",
       "flags": [
         "Judgment lien",
         "Multiple distress docs"
@@ -12805,16 +12777,16 @@
       "score": 45
     },
     {
-      "doc_num": "2026109263",
-      "doc_type": "JDGS",
-      "doc_label": "Judgment / Sentence",
+      "doc_num": "2026114875",
+      "doc_type": "JDG",
+      "doc_label": "Judgment",
       "filed": "",
       "cat": "judgment",
       "cat_label": "Judgment / Lien",
       "county": "Duval",
       "state": "FL",
-      "owner": "MINCEY WESTLEY VONTEZ",
-      "grantee": "FLORIDA STATE OF",
+      "owner": "FREEDOM FOREVER FLORIDA LLC",
+      "grantee": "MERRITT-JAIM1 LLC",
       "amount": 0,
       "legal": "",
       "prop_address": "",
@@ -12825,7 +12797,7 @@
       "mail_city": "",
       "mail_state": "",
       "mail_zip": "",
-      "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026109263",
+      "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026114875",
       "flags": [
         "Judgment lien",
         "LLC / corp owner"
@@ -14065,6 +14037,34 @@
       "score": 45
     },
     {
+      "doc_num": "2026114860",
+      "doc_type": "LN",
+      "doc_label": "Lien",
+      "filed": "",
+      "cat": "lien",
+      "cat_label": "Lien",
+      "county": "Duval",
+      "state": "FL",
+      "owner": "1ST ALTERNATIVE CARE HOMES LLC",
+      "grantee": "ELO ROOFING INC",
+      "amount": 0,
+      "legal": "L 32 B 4 PEARL COURT SEC 36-1S-26E",
+      "prop_address": "",
+      "prop_city": "",
+      "prop_state": "FL",
+      "prop_zip": "",
+      "mail_address": "",
+      "mail_city": "",
+      "mail_state": "",
+      "mail_zip": "",
+      "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026114860",
+      "flags": [
+        "Lien / UCC",
+        "LLC / corp owner"
+      ],
+      "score": 45
+    },
+    {
       "doc_num": "2026113419",
       "doc_type": "FS",
       "doc_label": "Finance Statement / UCC",
@@ -14117,494 +14117,6 @@
       "flags": [
         "Lien / UCC",
         "Multiple distress docs"
-      ],
-      "score": 45
-    },
-    {
-      "doc_num": "2026109309",
-      "doc_type": "NOC",
-      "doc_label": "Notice of Commencement",
-      "filed": "",
-      "cat": "noc",
-      "cat_label": "Notice of Commencement",
-      "county": "Duval",
-      "state": "FL",
-      "owner": "LICKETY SPLIT",
-      "grantee": "SMITH SEAN",
-      "amount": 0,
-      "legal": "L 4 B 1 LAKE PARK ESTATES U 1 SEC 39-1S-26E",
-      "prop_address": "",
-      "prop_city": "",
-      "prop_state": "FL",
-      "prop_zip": "",
-      "mail_address": "",
-      "mail_city": "",
-      "mail_state": "",
-      "mail_zip": "",
-      "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026109309",
-      "flags": [
-        "51 distress docs"
-      ],
-      "score": 45
-    },
-    {
-      "doc_num": "2026109310",
-      "doc_type": "NOC",
-      "doc_label": "Notice of Commencement",
-      "filed": "",
-      "cat": "noc",
-      "cat_label": "Notice of Commencement",
-      "county": "Duval",
-      "state": "FL",
-      "owner": "LICKETY SPLIT",
-      "grantee": "ROCHE JOHN",
-      "amount": 0,
-      "legal": "SEC 3-1S-27E",
-      "prop_address": "",
-      "prop_city": "",
-      "prop_state": "FL",
-      "prop_zip": "",
-      "mail_address": "",
-      "mail_city": "",
-      "mail_state": "",
-      "mail_zip": "",
-      "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026109310",
-      "flags": [
-        "51 distress docs"
-      ],
-      "score": 45
-    },
-    {
-      "doc_num": "2026109311",
-      "doc_type": "NOC",
-      "doc_label": "Notice of Commencement",
-      "filed": "",
-      "cat": "noc",
-      "cat_label": "Notice of Commencement",
-      "county": "Duval",
-      "state": "FL",
-      "owner": "LICKETY SPLIT",
-      "grantee": "WARD IVY",
-      "amount": 0,
-      "legal": "PT L 12 13 B 4 WASHINGTON LAKE ESTATES SEC 39-1S-26E",
-      "prop_address": "",
-      "prop_city": "",
-      "prop_state": "FL",
-      "prop_zip": "",
-      "mail_address": "",
-      "mail_city": "",
-      "mail_state": "",
-      "mail_zip": "",
-      "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026109311",
-      "flags": [
-        "51 distress docs"
-      ],
-      "score": 45
-    },
-    {
-      "doc_num": "2026109312",
-      "doc_type": "NOC",
-      "doc_label": "Notice of Commencement",
-      "filed": "",
-      "cat": "noc",
-      "cat_label": "Notice of Commencement",
-      "county": "Duval",
-      "state": "FL",
-      "owner": "LICKETY SPLIT",
-      "grantee": "FREGAT IKHLAS",
-      "amount": 0,
-      "legal": "L 345 ALDERMAN PARK U 8 SEC 52-2S-27E",
-      "prop_address": "",
-      "prop_city": "",
-      "prop_state": "FL",
-      "prop_zip": "",
-      "mail_address": "",
-      "mail_city": "",
-      "mail_state": "",
-      "mail_zip": "",
-      "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026109312",
-      "flags": [
-        "51 distress docs"
-      ],
-      "score": 45
-    },
-    {
-      "doc_num": "2026109313",
-      "doc_type": "NOC",
-      "doc_label": "Notice of Commencement",
-      "filed": "",
-      "cat": "noc",
-      "cat_label": "Notice of Commencement",
-      "county": "Duval",
-      "state": "FL",
-      "owner": "LICKETY SPLIT",
-      "grantee": "PIMENTEL ANNABYS",
-      "amount": 0,
-      "legal": "L 16 WATERMILL U 6 SEC 32-3S-25E",
-      "prop_address": "",
-      "prop_city": "",
-      "prop_state": "FL",
-      "prop_zip": "",
-      "mail_address": "",
-      "mail_city": "",
-      "mail_state": "",
-      "mail_zip": "",
-      "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026109313",
-      "flags": [
-        "51 distress docs"
-      ],
-      "score": 45
-    },
-    {
-      "doc_num": "2026109314",
-      "doc_type": "NOC",
-      "doc_label": "Notice of Commencement",
-      "filed": "",
-      "cat": "noc",
-      "cat_label": "Notice of Commencement",
-      "county": "Duval",
-      "state": "FL",
-      "owner": "LICKETY SPLIT",
-      "grantee": "BEASLEY DOYLE",
-      "amount": 0,
-      "legal": "PT L 11 B 1 PAXON FIELD SEC 8-2S-26E",
-      "prop_address": "",
-      "prop_city": "",
-      "prop_state": "FL",
-      "prop_zip": "",
-      "mail_address": "",
-      "mail_city": "",
-      "mail_state": "",
-      "mail_zip": "",
-      "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026109314",
-      "flags": [
-        "51 distress docs"
-      ],
-      "score": 45
-    },
-    {
-      "doc_num": "2026109315",
-      "doc_type": "NOC",
-      "doc_label": "Notice of Commencement",
-      "filed": "",
-      "cat": "noc",
-      "cat_label": "Notice of Commencement",
-      "county": "Duval",
-      "state": "FL",
-      "owner": "LICKETY SPLIT",
-      "grantee": "SNYDER JULIE",
-      "amount": 0,
-      "legal": "L 32 SWEETWATER CREEK U 4 SEC 11-4S-27E",
-      "prop_address": "",
-      "prop_city": "",
-      "prop_state": "FL",
-      "prop_zip": "",
-      "mail_address": "",
-      "mail_city": "",
-      "mail_state": "",
-      "mail_zip": "",
-      "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026109315",
-      "flags": [
-        "51 distress docs"
-      ],
-      "score": 45
-    },
-    {
-      "doc_num": "2026109317",
-      "doc_type": "NOC",
-      "doc_label": "Notice of Commencement",
-      "filed": "",
-      "cat": "noc",
-      "cat_label": "Notice of Commencement",
-      "county": "Duval",
-      "state": "FL",
-      "owner": "LICKETY SPLIT",
-      "grantee": "SHORE STEPHEN",
-      "amount": 0,
-      "legal": "JACKSONVILLE FARMS SEC 26-2S-24E",
-      "prop_address": "",
-      "prop_city": "",
-      "prop_state": "FL",
-      "prop_zip": "",
-      "mail_address": "",
-      "mail_city": "",
-      "mail_state": "",
-      "mail_zip": "",
-      "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026109317",
-      "flags": [
-        "51 distress docs"
-      ],
-      "score": 45
-    },
-    {
-      "doc_num": "2026109318",
-      "doc_type": "NOC",
-      "doc_label": "Notice of Commencement",
-      "filed": "",
-      "cat": "noc",
-      "cat_label": "Notice of Commencement",
-      "county": "Duval",
-      "state": "FL",
-      "owner": "LICKETY SPLIT",
-      "grantee": "WARD IVY",
-      "amount": 0,
-      "legal": "PT L 12 13 B 4 WASHINGTON LAKE ESTATES SEC 39-1S-26E",
-      "prop_address": "",
-      "prop_city": "",
-      "prop_state": "FL",
-      "prop_zip": "",
-      "mail_address": "",
-      "mail_city": "",
-      "mail_state": "",
-      "mail_zip": "",
-      "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026109318",
-      "flags": [
-        "51 distress docs"
-      ],
-      "score": 45
-    },
-    {
-      "doc_num": "2026109320",
-      "doc_type": "NOC",
-      "doc_label": "Notice of Commencement",
-      "filed": "",
-      "cat": "noc",
-      "cat_label": "Notice of Commencement",
-      "county": "Duval",
-      "state": "FL",
-      "owner": "LICKETY SPLIT",
-      "grantee": "CHUN CONRAD",
-      "amount": 0,
-      "legal": "FRANCIS P SANCHEZ GRANT SEC 50-1S-28E",
-      "prop_address": "",
-      "prop_city": "",
-      "prop_state": "FL",
-      "prop_zip": "",
-      "mail_address": "",
-      "mail_city": "",
-      "mail_state": "",
-      "mail_zip": "",
-      "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026109320",
-      "flags": [
-        "51 distress docs"
-      ],
-      "score": 45
-    },
-    {
-      "doc_num": "2026109321",
-      "doc_type": "NOC",
-      "doc_label": "Notice of Commencement",
-      "filed": "",
-      "cat": "noc",
-      "cat_label": "Notice of Commencement",
-      "county": "Duval",
-      "state": "FL",
-      "owner": "LICKETY SPLIT",
-      "grantee": "GODWIN MICHELLE",
-      "amount": 0,
-      "legal": "THE OAKS CONDOMINIUM U O3-2 SEC 52-2S-27E",
-      "prop_address": "",
-      "prop_city": "",
-      "prop_state": "FL",
-      "prop_zip": "",
-      "mail_address": "",
-      "mail_city": "",
-      "mail_state": "",
-      "mail_zip": "",
-      "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026109321",
-      "flags": [
-        "51 distress docs"
-      ],
-      "score": 45
-    },
-    {
-      "doc_num": "2026109322",
-      "doc_type": "NOC",
-      "doc_label": "Notice of Commencement",
-      "filed": "",
-      "cat": "noc",
-      "cat_label": "Notice of Commencement",
-      "county": "Duval",
-      "state": "FL",
-      "owner": "LICKETY SPLIT",
-      "grantee": "GODWIN MICHELLE",
-      "amount": 0,
-      "legal": "THE OAKS CONDOMINIUM U O3-2 SEC 52-2S-27E",
-      "prop_address": "",
-      "prop_city": "",
-      "prop_state": "FL",
-      "prop_zip": "",
-      "mail_address": "",
-      "mail_city": "",
-      "mail_state": "",
-      "mail_zip": "",
-      "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026109322",
-      "flags": [
-        "51 distress docs"
-      ],
-      "score": 45
-    },
-    {
-      "doc_num": "2026109323",
-      "doc_type": "NOC",
-      "doc_label": "Notice of Commencement",
-      "filed": "",
-      "cat": "noc",
-      "cat_label": "Notice of Commencement",
-      "county": "Duval",
-      "state": "FL",
-      "owner": "LICKETY SPLIT",
-      "grantee": "TOWNS ELIJAH",
-      "amount": 0,
-      "legal": "L 4 B 42 ROYAL TERRACE SEC 55-2S-26E",
-      "prop_address": "",
-      "prop_city": "",
-      "prop_state": "FL",
-      "prop_zip": "",
-      "mail_address": "",
-      "mail_city": "",
-      "mail_state": "",
-      "mail_zip": "",
-      "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026109323",
-      "flags": [
-        "51 distress docs"
-      ],
-      "score": 45
-    },
-    {
-      "doc_num": "2026109324",
-      "doc_type": "NOC",
-      "doc_label": "Notice of Commencement",
-      "filed": "",
-      "cat": "noc",
-      "cat_label": "Notice of Commencement",
-      "county": "Duval",
-      "state": "FL",
-      "owner": "LICKETY SPLIT",
-      "grantee": "MOODY LONNIE",
-      "amount": 0,
-      "legal": "L 89 ALDERMAN PARK U 2 SEC 52-2S-27E",
-      "prop_address": "",
-      "prop_city": "",
-      "prop_state": "FL",
-      "prop_zip": "",
-      "mail_address": "",
-      "mail_city": "",
-      "mail_state": "",
-      "mail_zip": "",
-      "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026109324",
-      "flags": [
-        "51 distress docs"
-      ],
-      "score": 45
-    },
-    {
-      "doc_num": "2026109325",
-      "doc_type": "NOC",
-      "doc_label": "Notice of Commencement",
-      "filed": "",
-      "cat": "noc",
-      "cat_label": "Notice of Commencement",
-      "county": "Duval",
-      "state": "FL",
-      "owner": "LICKETY SPLIT",
-      "grantee": "NORRIS EVELYN",
-      "amount": 0,
-      "legal": "L 5 B 52 WASHINGTON HEIGHTS ESTATES U 2 SEC 39-1S-26E",
-      "prop_address": "",
-      "prop_city": "",
-      "prop_state": "FL",
-      "prop_zip": "",
-      "mail_address": "",
-      "mail_city": "",
-      "mail_state": "",
-      "mail_zip": "",
-      "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026109325",
-      "flags": [
-        "51 distress docs"
-      ],
-      "score": 45
-    },
-    {
-      "doc_num": "2026109331",
-      "doc_type": "NOC",
-      "doc_label": "Notice of Commencement",
-      "filed": "",
-      "cat": "noc",
-      "cat_label": "Notice of Commencement",
-      "county": "Duval",
-      "state": "FL",
-      "owner": "LICKETY SPLIT",
-      "grantee": "ARMSTRONG SANDRA",
-      "amount": 0,
-      "legal": "TIDES CONDOMINIUM AT SWEETWATER U 27E SEC 28-3S-28E",
-      "prop_address": "",
-      "prop_city": "",
-      "prop_state": "FL",
-      "prop_zip": "",
-      "mail_address": "",
-      "mail_city": "",
-      "mail_state": "",
-      "mail_zip": "",
-      "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026109331",
-      "flags": [
-        "51 distress docs"
-      ],
-      "score": 45
-    },
-    {
-      "doc_num": "2026109340",
-      "doc_type": "NOC",
-      "doc_label": "Notice of Commencement",
-      "filed": "",
-      "cat": "noc",
-      "cat_label": "Notice of Commencement",
-      "county": "Duval",
-      "state": "FL",
-      "owner": "CORNERSTONE RESTORATION LLC",
-      "grantee": "DOWNY THOMAS",
-      "amount": 0,
-      "legal": "L 7 B 23 ORTEGA FOREST U 8 SEC 42-3S-26E",
-      "prop_address": "",
-      "prop_city": "",
-      "prop_state": "FL",
-      "prop_zip": "",
-      "mail_address": "",
-      "mail_city": "",
-      "mail_state": "",
-      "mail_zip": "",
-      "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026109340",
-      "flags": [
-        "Multiple distress docs",
-        "LLC / corp owner"
-      ],
-      "score": 45
-    },
-    {
-      "doc_num": "2026109351",
-      "doc_type": "NOC",
-      "doc_label": "Notice of Commencement",
-      "filed": "",
-      "cat": "noc",
-      "cat_label": "Notice of Commencement",
-      "county": "Duval",
-      "state": "FL",
-      "owner": "CORNERSTONE RESTORATION LLC",
-      "grantee": "NELSON TONY",
-      "amount": 0,
-      "legal": "SIBBALD GRANT SEC 39-1S-26E",
-      "prop_address": "",
-      "prop_city": "",
-      "prop_state": "FL",
-      "prop_zip": "",
-      "mail_address": "",
-      "mail_city": "",
-      "mail_state": "",
-      "mail_zip": "",
-      "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026109351",
-      "flags": [
-        "Multiple distress docs",
-        "LLC / corp owner"
       ],
       "score": 45
     },
@@ -15729,7 +15241,7 @@
       "mail_zip": "",
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026110167",
       "flags": [
-        "9 distress docs"
+        "10 distress docs"
       ],
       "score": 45
     },
@@ -15867,7 +15379,7 @@
       "mail_zip": "",
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026110382",
       "flags": [
-        "9 distress docs"
+        "10 distress docs"
       ],
       "score": 45
     },
@@ -16168,7 +15680,7 @@
       "mail_zip": "",
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026110576",
       "flags": [
-        "9 distress docs"
+        "10 distress docs"
       ],
       "score": 45
     },
@@ -16303,7 +15815,7 @@
       "mail_zip": "",
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026110743",
       "flags": [
-        "51 distress docs"
+        "35 distress docs"
       ],
       "score": 45
     },
@@ -16330,7 +15842,7 @@
       "mail_zip": "",
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026110746",
       "flags": [
-        "51 distress docs"
+        "35 distress docs"
       ],
       "score": 45
     },
@@ -16357,7 +15869,7 @@
       "mail_zip": "",
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026110747",
       "flags": [
-        "51 distress docs"
+        "35 distress docs"
       ],
       "score": 45
     },
@@ -16384,7 +15896,7 @@
       "mail_zip": "",
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026110751",
       "flags": [
-        "51 distress docs"
+        "35 distress docs"
       ],
       "score": 45
     },
@@ -16411,7 +15923,7 @@
       "mail_zip": "",
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026110752",
       "flags": [
-        "51 distress docs"
+        "35 distress docs"
       ],
       "score": 45
     },
@@ -16438,7 +15950,7 @@
       "mail_zip": "",
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026110753",
       "flags": [
-        "51 distress docs"
+        "35 distress docs"
       ],
       "score": 45
     },
@@ -16465,7 +15977,7 @@
       "mail_zip": "",
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026110756",
       "flags": [
-        "51 distress docs"
+        "35 distress docs"
       ],
       "score": 45
     },
@@ -16492,7 +16004,7 @@
       "mail_zip": "",
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026110766",
       "flags": [
-        "51 distress docs"
+        "35 distress docs"
       ],
       "score": 45
     },
@@ -16519,7 +16031,7 @@
       "mail_zip": "",
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026110767",
       "flags": [
-        "51 distress docs"
+        "35 distress docs"
       ],
       "score": 45
     },
@@ -16546,7 +16058,7 @@
       "mail_zip": "",
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026110774",
       "flags": [
-        "51 distress docs"
+        "35 distress docs"
       ],
       "score": 45
     },
@@ -16573,7 +16085,7 @@
       "mail_zip": "",
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026110776",
       "flags": [
-        "51 distress docs"
+        "35 distress docs"
       ],
       "score": 45
     },
@@ -16600,7 +16112,7 @@
       "mail_zip": "",
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026110782",
       "flags": [
-        "51 distress docs"
+        "35 distress docs"
       ],
       "score": 45
     },
@@ -16627,7 +16139,7 @@
       "mail_zip": "",
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026110811",
       "flags": [
-        "51 distress docs"
+        "35 distress docs"
       ],
       "score": 45
     },
@@ -16654,7 +16166,7 @@
       "mail_zip": "",
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026110823",
       "flags": [
-        "9 distress docs"
+        "10 distress docs"
       ],
       "score": 45
     },
@@ -17602,7 +17114,7 @@
       "mail_zip": "",
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026111418",
       "flags": [
-        "9 distress docs"
+        "10 distress docs"
       ],
       "score": 45
     },
@@ -18234,7 +17746,7 @@
       "mail_zip": "",
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026111991",
       "flags": [
-        "9 distress docs"
+        "10 distress docs"
       ],
       "score": 45
     },
@@ -18700,7 +18212,7 @@
       "mail_zip": "",
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026112277",
       "flags": [
-        "9 distress docs"
+        "10 distress docs"
       ],
       "score": 45
     },
@@ -18976,6 +18488,34 @@
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026112901",
       "flags": [
         "3 distress docs"
+      ],
+      "score": 45
+    },
+    {
+      "doc_num": "2026112969",
+      "doc_type": "NOC",
+      "doc_label": "Notice of Commencement",
+      "filed": "",
+      "cat": "noc",
+      "cat_label": "Notice of Commencement",
+      "county": "Duval",
+      "state": "FL",
+      "owner": "BRUZZ ROOFING INC",
+      "grantee": "SHELBY ASHLEY",
+      "amount": 0,
+      "legal": "L 5 B 2 BENTIN ESTATES SEC 08 2S 29E",
+      "prop_address": "",
+      "prop_city": "",
+      "prop_state": "FL",
+      "prop_zip": "",
+      "mail_address": "",
+      "mail_city": "",
+      "mail_state": "",
+      "mail_zip": "",
+      "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026112969",
+      "flags": [
+        "Multiple distress docs",
+        "LLC / corp owner"
       ],
       "score": 45
     },
@@ -19415,7 +18955,7 @@
       "mail_zip": "",
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026113362",
       "flags": [
-        "9 distress docs"
+        "10 distress docs"
       ],
       "score": 45
     },
@@ -19470,7 +19010,7 @@
       "mail_zip": "",
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026113384",
       "flags": [
-        "51 distress docs"
+        "35 distress docs"
       ],
       "score": 45
     },
@@ -19497,7 +19037,7 @@
       "mail_zip": "",
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026113385",
       "flags": [
-        "51 distress docs"
+        "35 distress docs"
       ],
       "score": 45
     },
@@ -19524,7 +19064,7 @@
       "mail_zip": "",
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026113388",
       "flags": [
-        "51 distress docs"
+        "35 distress docs"
       ],
       "score": 45
     },
@@ -19551,7 +19091,7 @@
       "mail_zip": "",
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026113389",
       "flags": [
-        "51 distress docs"
+        "35 distress docs"
       ],
       "score": 45
     },
@@ -19578,7 +19118,7 @@
       "mail_zip": "",
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026113393",
       "flags": [
-        "51 distress docs"
+        "35 distress docs"
       ],
       "score": 45
     },
@@ -19605,7 +19145,7 @@
       "mail_zip": "",
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026113394",
       "flags": [
-        "51 distress docs"
+        "35 distress docs"
       ],
       "score": 45
     },
@@ -19632,7 +19172,7 @@
       "mail_zip": "",
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026113395",
       "flags": [
-        "51 distress docs"
+        "35 distress docs"
       ],
       "score": 45
     },
@@ -19659,7 +19199,7 @@
       "mail_zip": "",
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026113396",
       "flags": [
-        "51 distress docs"
+        "35 distress docs"
       ],
       "score": 45
     },
@@ -19686,7 +19226,7 @@
       "mail_zip": "",
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026113397",
       "flags": [
-        "51 distress docs"
+        "35 distress docs"
       ],
       "score": 45
     },
@@ -19713,7 +19253,7 @@
       "mail_zip": "",
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026113398",
       "flags": [
-        "51 distress docs"
+        "35 distress docs"
       ],
       "score": 45
     },
@@ -19740,7 +19280,7 @@
       "mail_zip": "",
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026113410",
       "flags": [
-        "51 distress docs"
+        "35 distress docs"
       ],
       "score": 45
     },
@@ -19767,7 +19307,7 @@
       "mail_zip": "",
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026113418",
       "flags": [
-        "51 distress docs"
+        "35 distress docs"
       ],
       "score": 45
     },
@@ -19911,6 +19451,34 @@
       "score": 45
     },
     {
+      "doc_num": "2026113710",
+      "doc_type": "NOC",
+      "doc_label": "Notice of Commencement",
+      "filed": "",
+      "cat": "noc",
+      "cat_label": "Notice of Commencement",
+      "county": "Duval",
+      "state": "FL",
+      "owner": "BRUZZ ROOFING INC",
+      "grantee": "WILLIAMS JEFFREY",
+      "amount": 0,
+      "legal": "L 6 THE SPRINGS SEC 30 2S 25E",
+      "prop_address": "",
+      "prop_city": "",
+      "prop_state": "FL",
+      "prop_zip": "",
+      "mail_address": "",
+      "mail_city": "",
+      "mail_state": "",
+      "mail_zip": "",
+      "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026113710",
+      "flags": [
+        "Multiple distress docs",
+        "LLC / corp owner"
+      ],
+      "score": 45
+    },
+    {
       "doc_num": "2026113722",
       "doc_type": "NOC",
       "doc_label": "Notice of Commencement",
@@ -19961,7 +19529,7 @@
       "mail_zip": "",
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026113740",
       "flags": [
-        "51 distress docs"
+        "35 distress docs"
       ],
       "score": 45
     },
@@ -20016,7 +19584,7 @@
       "mail_zip": "",
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026113876",
       "flags": [
-        "9 distress docs"
+        "10 distress docs"
       ],
       "score": 45
     },
@@ -20043,7 +19611,7 @@
       "mail_zip": "",
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026113968",
       "flags": [
-        "51 distress docs"
+        "35 distress docs"
       ],
       "score": 45
     },
@@ -20070,7 +19638,7 @@
       "mail_zip": "",
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026113969",
       "flags": [
-        "51 distress docs"
+        "35 distress docs"
       ],
       "score": 45
     },
@@ -20097,7 +19665,7 @@
       "mail_zip": "",
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026113982",
       "flags": [
-        "51 distress docs"
+        "35 distress docs"
       ],
       "score": 45
     },
@@ -20124,7 +19692,7 @@
       "mail_zip": "",
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026113983",
       "flags": [
-        "51 distress docs"
+        "35 distress docs"
       ],
       "score": 45
     },
@@ -20151,7 +19719,7 @@
       "mail_zip": "",
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026113985",
       "flags": [
-        "51 distress docs"
+        "35 distress docs"
       ],
       "score": 45
     },
@@ -20178,7 +19746,7 @@
       "mail_zip": "",
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026113996",
       "flags": [
-        "51 distress docs"
+        "35 distress docs"
       ],
       "score": 45
     },
@@ -20205,7 +19773,7 @@
       "mail_zip": "",
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026113998",
       "flags": [
-        "51 distress docs"
+        "35 distress docs"
       ],
       "score": 45
     },
@@ -20232,7 +19800,7 @@
       "mail_zip": "",
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026114000",
       "flags": [
-        "51 distress docs"
+        "35 distress docs"
       ],
       "score": 45
     },
@@ -20259,7 +19827,7 @@
       "mail_zip": "",
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026114009",
       "flags": [
-        "51 distress docs"
+        "35 distress docs"
       ],
       "score": 45
     },
@@ -21274,6 +20842,33 @@
       "score": 45
     },
     {
+      "doc_num": "2026114865",
+      "doc_type": "NOC",
+      "doc_label": "Notice of Commencement",
+      "filed": "",
+      "cat": "noc",
+      "cat_label": "Notice of Commencement",
+      "county": "Duval",
+      "state": "FL",
+      "owner": "ELO ROOFING",
+      "grantee": "SAVINA NICK J",
+      "amount": 0,
+      "legal": "PT L 5 B 29 ORTEGA",
+      "prop_address": "",
+      "prop_city": "",
+      "prop_state": "FL",
+      "prop_zip": "",
+      "mail_address": "",
+      "mail_city": "",
+      "mail_state": "",
+      "mail_zip": "",
+      "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026114865",
+      "flags": [
+        "10 distress docs"
+      ],
+      "score": 45
+    },
+    {
       "doc_num": "2026110326",
       "doc_type": "RELEASE",
       "doc_label": "Release",
@@ -22107,6 +21702,34 @@
       "score": 40
     },
     {
+      "doc_num": "2026114853",
+      "doc_type": "FS",
+      "doc_label": "Finance Statement / UCC",
+      "filed": "",
+      "cat": "lien",
+      "cat_label": "UCC / Finance Lien",
+      "county": "Duval",
+      "state": "FL",
+      "owner": "SEAGRASS APARTMENTS (FL) OWNER LLC",
+      "grantee": "LOANCORE 2022-CRE7 ISSUER LTD",
+      "amount": 0,
+      "legal": "PT L 1-24 26 27 B 7 ATLANTIC HIGHLANDS &C",
+      "prop_address": "",
+      "prop_city": "",
+      "prop_state": "FL",
+      "prop_zip": "",
+      "mail_address": "",
+      "mail_city": "",
+      "mail_state": "",
+      "mail_zip": "",
+      "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026114853",
+      "flags": [
+        "Lien / UCC",
+        "LLC / corp owner"
+      ],
+      "score": 40
+    },
+    {
       "doc_num": "2026109576",
       "doc_type": "PROB",
       "doc_label": "Probate",
@@ -22132,60 +21755,6 @@
         "Probate / estate"
       ],
       "score": 40
-    },
-    {
-      "doc_num": "2026109265",
-      "doc_type": "JDG",
-      "doc_label": "Judgment",
-      "filed": "",
-      "cat": "judgment",
-      "cat_label": "Judgment / Lien",
-      "county": "Duval",
-      "state": "FL",
-      "owner": "MINOR LAURA",
-      "grantee": "ISMAIL HISHYAR A",
-      "amount": 0,
-      "legal": "",
-      "prop_address": "",
-      "prop_city": "",
-      "prop_state": "FL",
-      "prop_zip": "",
-      "mail_address": "",
-      "mail_city": "",
-      "mail_state": "",
-      "mail_zip": "",
-      "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026109265",
-      "flags": [
-        "Judgment lien"
-      ],
-      "score": 35
-    },
-    {
-      "doc_num": "2026109267",
-      "doc_type": "JDG",
-      "doc_label": "Judgment",
-      "filed": "",
-      "cat": "judgment",
-      "cat_label": "Judgment / Lien",
-      "county": "Duval",
-      "state": "FL",
-      "owner": "CONDOLL DESHUNTI MARTIN",
-      "grantee": "HUTCHINSON ABRAHAM",
-      "amount": 0,
-      "legal": "",
-      "prop_address": "",
-      "prop_city": "",
-      "prop_state": "FL",
-      "prop_zip": "",
-      "mail_address": "",
-      "mail_city": "",
-      "mail_state": "",
-      "mail_zip": "",
-      "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026109267",
-      "flags": [
-        "Judgment lien"
-      ],
-      "score": 35
     },
     {
       "doc_num": "2026109568",
@@ -32421,6 +31990,33 @@
       "score": 35
     },
     {
+      "doc_num": "2026114874",
+      "doc_type": "JDG",
+      "doc_label": "Judgment",
+      "filed": "",
+      "cat": "judgment",
+      "cat_label": "Judgment / Lien",
+      "county": "Duval",
+      "state": "FL",
+      "owner": "SELLERS ANGELA M",
+      "grantee": "VESTOR FUND XXII LTD",
+      "amount": 0,
+      "legal": "",
+      "prop_address": "",
+      "prop_city": "",
+      "prop_state": "FL",
+      "prop_zip": "",
+      "mail_address": "",
+      "mail_city": "",
+      "mail_state": "",
+      "mail_zip": "",
+      "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026114874",
+      "flags": [
+        "Judgment lien"
+      ],
+      "score": 35
+    },
+    {
       "doc_num": "2026109953",
       "doc_type": "JDGR",
       "doc_label": "Judgment / Restitution",
@@ -32658,114 +32254,6 @@
       "mail_state": "",
       "mail_zip": "",
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026114270",
-      "flags": [
-        "Judgment lien"
-      ],
-      "score": 35
-    },
-    {
-      "doc_num": "2026109262",
-      "doc_type": "JDGS",
-      "doc_label": "Judgment / Sentence",
-      "filed": "",
-      "cat": "judgment",
-      "cat_label": "Judgment / Lien",
-      "county": "Duval",
-      "state": "FL",
-      "owner": "PARKER ERROLL ANTONIO",
-      "grantee": "FLORIDA STATE OF",
-      "amount": 0,
-      "legal": "",
-      "prop_address": "",
-      "prop_city": "",
-      "prop_state": "FL",
-      "prop_zip": "",
-      "mail_address": "",
-      "mail_city": "",
-      "mail_state": "",
-      "mail_zip": "",
-      "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026109262",
-      "flags": [
-        "Judgment lien"
-      ],
-      "score": 35
-    },
-    {
-      "doc_num": "2026109264",
-      "doc_type": "JDGS",
-      "doc_label": "Judgment / Sentence",
-      "filed": "",
-      "cat": "judgment",
-      "cat_label": "Judgment / Lien",
-      "county": "Duval",
-      "state": "FL",
-      "owner": "HICKS DEVON MATTHEW",
-      "grantee": "FLORIDA STATE OF",
-      "amount": 0,
-      "legal": "",
-      "prop_address": "",
-      "prop_city": "",
-      "prop_state": "FL",
-      "prop_zip": "",
-      "mail_address": "",
-      "mail_city": "",
-      "mail_state": "",
-      "mail_zip": "",
-      "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026109264",
-      "flags": [
-        "Judgment lien"
-      ],
-      "score": 35
-    },
-    {
-      "doc_num": "2026109266",
-      "doc_type": "JDGS",
-      "doc_label": "Judgment / Sentence",
-      "filed": "",
-      "cat": "judgment",
-      "cat_label": "Judgment / Lien",
-      "county": "Duval",
-      "state": "FL",
-      "owner": "GOGGINS BRYAN LLOYD",
-      "grantee": "FLORIDA STATE OF",
-      "amount": 0,
-      "legal": "",
-      "prop_address": "",
-      "prop_city": "",
-      "prop_state": "FL",
-      "prop_zip": "",
-      "mail_address": "",
-      "mail_city": "",
-      "mail_state": "",
-      "mail_zip": "",
-      "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026109266",
-      "flags": [
-        "Judgment lien"
-      ],
-      "score": 35
-    },
-    {
-      "doc_num": "2026109270",
-      "doc_type": "JDGS",
-      "doc_label": "Judgment / Sentence",
-      "filed": "",
-      "cat": "judgment",
-      "cat_label": "Judgment / Lien",
-      "county": "Duval",
-      "state": "FL",
-      "owner": "PERKINS ANTHONY L JR",
-      "grantee": "FLORIDA STATE OF",
-      "amount": 0,
-      "legal": "",
-      "prop_address": "",
-      "prop_city": "",
-      "prop_state": "FL",
-      "prop_zip": "",
-      "mail_address": "",
-      "mail_city": "",
-      "mail_state": "",
-      "mail_zip": "",
-      "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026109270",
       "flags": [
         "Judgment lien"
       ],
@@ -43518,16 +43006,16 @@
       "score": 35
     },
     {
-      "doc_num": "2026109364",
-      "doc_type": "CCCJUDG",
-      "doc_label": "CC Court Judgment",
+      "doc_num": "2026114866",
+      "doc_type": "JDGS",
+      "doc_label": "Judgment / Sentence",
       "filed": "",
       "cat": "judgment",
       "cat_label": "Judgment / Lien",
       "county": "Duval",
       "state": "FL",
-      "owner": "LEMING PATRICK",
-      "grantee": "ALVAREZ ALEXA K PA",
+      "owner": "KEARSE ANGELA MCLEOD",
+      "grantee": "FLORIDA STATE OF",
       "amount": 0,
       "legal": "",
       "prop_address": "",
@@ -43538,7 +43026,7 @@
       "mail_city": "",
       "mail_state": "",
       "mail_zip": "",
-      "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026109364",
+      "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026114866",
       "flags": [
         "Judgment lien"
       ],
@@ -47730,16 +47218,16 @@
       "score": 35
     },
     {
-      "doc_num": "2026109352",
-      "doc_type": "DTH",
-      "doc_label": "Death Certificate",
+      "doc_num": "2026114844",
+      "doc_type": "LN",
+      "doc_label": "Lien",
       "filed": "",
-      "cat": "probate",
-      "cat_label": "Probate / Estate",
+      "cat": "lien",
+      "cat_label": "Lien",
       "county": "Duval",
       "state": "FL",
-      "owner": "",
-      "grantee": "WODRICH THOMAS HERBERT",
+      "owner": "SKAGGS KASEY LYNN",
+      "grantee": "UNITED STATES ATTORNEY'S OFFICE",
       "amount": 0,
       "legal": "",
       "prop_address": "",
@@ -47750,9 +47238,90 @@
       "mail_city": "",
       "mail_state": "",
       "mail_zip": "",
-      "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026109352",
+      "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026114844",
       "flags": [
-        "Probate / estate"
+        "Lien / UCC"
+      ],
+      "score": 35
+    },
+    {
+      "doc_num": "2026114848",
+      "doc_type": "LN",
+      "doc_label": "Lien",
+      "filed": "",
+      "cat": "lien",
+      "cat_label": "Lien",
+      "county": "Duval",
+      "state": "FL",
+      "owner": "FULLER OTHIE L JR",
+      "grantee": "ADAMS LAKE OWNERS ASSOCIATION INC",
+      "amount": 0,
+      "legal": "L 47 ADAMS LAKE U 4",
+      "prop_address": "",
+      "prop_city": "",
+      "prop_state": "FL",
+      "prop_zip": "",
+      "mail_address": "",
+      "mail_city": "",
+      "mail_state": "",
+      "mail_zip": "",
+      "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026114848",
+      "flags": [
+        "Lien / UCC"
+      ],
+      "score": 35
+    },
+    {
+      "doc_num": "2026114851",
+      "doc_type": "LN",
+      "doc_label": "Lien",
+      "filed": "",
+      "cat": "lien",
+      "cat_label": "Lien",
+      "county": "Duval",
+      "state": "FL",
+      "owner": "BROWN ERRICA",
+      "grantee": "ADAMS LAKE OWNERS ASSOCIATION INC",
+      "amount": 0,
+      "legal": "L 61 ADAMS LAKE U 6",
+      "prop_address": "",
+      "prop_city": "",
+      "prop_state": "FL",
+      "prop_zip": "",
+      "mail_address": "",
+      "mail_city": "",
+      "mail_state": "",
+      "mail_zip": "",
+      "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026114851",
+      "flags": [
+        "Lien / UCC"
+      ],
+      "score": 35
+    },
+    {
+      "doc_num": "2026114859",
+      "doc_type": "LN",
+      "doc_label": "Lien",
+      "filed": "",
+      "cat": "lien",
+      "cat_label": "Lien",
+      "county": "Duval",
+      "state": "FL",
+      "owner": "LECOUNT TERELLE DEVON",
+      "grantee": "ST IVES OF JACKSONVILLE HOMEOWNERS ASSOCIATION INC",
+      "amount": 0,
+      "legal": "L 50 ST IVES",
+      "prop_address": "",
+      "prop_city": "",
+      "prop_state": "FL",
+      "prop_zip": "",
+      "mail_address": "",
+      "mail_city": "",
+      "mail_state": "",
+      "mail_zip": "",
+      "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026114859",
+      "flags": [
+        "Lien / UCC"
       ],
       "score": 35
     },
@@ -48891,33 +48460,6 @@
       "score": 35
     },
     {
-      "doc_num": "2026109335",
-      "doc_type": "NOC",
-      "doc_label": "Notice of Commencement",
-      "filed": "",
-      "cat": "noc",
-      "cat_label": "Notice of Commencement",
-      "county": "Duval",
-      "state": "FL",
-      "owner": "AA SERVICE AND REPAIR-NORTH FLORIDA AC",
-      "grantee": "RAYMOND JUVERA VAUGHN",
-      "amount": 0,
-      "legal": "L 91 JULINGTON CROSSING U 2 SEC 14-4S-27E",
-      "prop_address": "",
-      "prop_city": "",
-      "prop_state": "FL",
-      "prop_zip": "",
-      "mail_address": "",
-      "mail_city": "",
-      "mail_state": "",
-      "mail_zip": "",
-      "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026109335",
-      "flags": [
-        "Multiple distress docs"
-      ],
-      "score": 35
-    },
-    {
       "doc_num": "2026109771",
       "doc_type": "NOC",
       "doc_label": "Notice of Commencement",
@@ -49263,33 +48805,6 @@
       "mail_state": "",
       "mail_zip": "",
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026111971",
-      "flags": [
-        "Multiple distress docs"
-      ],
-      "score": 35
-    },
-    {
-      "doc_num": "2026112065",
-      "doc_type": "NOC",
-      "doc_label": "Notice of Commencement",
-      "filed": "",
-      "cat": "noc",
-      "cat_label": "Notice of Commencement",
-      "county": "Duval",
-      "state": "FL",
-      "owner": "AA SERVICE AND REPAIR-NORTH FLORIDA AC",
-      "grantee": "GOROSPE MICHAEL",
-      "amount": 0,
-      "legal": "L 52 SEASONS AT MIL COVE  PHYSICAL ADDRESS 4921 FROST LAKE DRIVE",
-      "prop_address": "",
-      "prop_city": "",
-      "prop_state": "FL",
-      "prop_zip": "",
-      "mail_address": "",
-      "mail_city": "",
-      "mail_state": "",
-      "mail_zip": "",
-      "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026112065",
       "flags": [
         "Multiple distress docs"
       ],
@@ -51290,33 +50805,6 @@
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026114809",
       "flags": [
         "Lien / UCC"
-      ],
-      "score": 30
-    },
-    {
-      "doc_num": "2026109366",
-      "doc_type": "NOC",
-      "doc_label": "Notice of Commencement",
-      "filed": "",
-      "cat": "noc",
-      "cat_label": "Notice of Commencement",
-      "county": "Duval",
-      "state": "FL",
-      "owner": "EQUITY BUILDERS OF FLORIDA LLC",
-      "grantee": "ALL-STAR SALES INC",
-      "amount": 0,
-      "legal": "SEC 106-3S-27E",
-      "prop_address": "",
-      "prop_city": "",
-      "prop_state": "FL",
-      "prop_zip": "",
-      "mail_address": "",
-      "mail_city": "",
-      "mail_state": "",
-      "mail_zip": "",
-      "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026109366",
-      "flags": [
-        "LLC / corp owner"
       ],
       "score": 30
     },
@@ -55398,6 +54886,33 @@
       "score": 30
     },
     {
+      "doc_num": "2026114876",
+      "doc_type": "NOC",
+      "doc_label": "Notice of Commencement",
+      "filed": "",
+      "cat": "noc",
+      "cat_label": "Notice of Commencement",
+      "county": "Duval",
+      "state": "FL",
+      "owner": "A &T ROOFING EXTERIORS LLC",
+      "grantee": "NEWTON SUSAN",
+      "amount": 0,
+      "legal": "L 6 7 ARLINGTON RIVER HILLS U 3 SEC 52-2S-27E",
+      "prop_address": "",
+      "prop_city": "",
+      "prop_state": "FL",
+      "prop_zip": "",
+      "mail_address": "",
+      "mail_city": "",
+      "mail_state": "",
+      "mail_zip": "",
+      "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026114876",
+      "flags": [
+        "LLC / corp owner"
+      ],
+      "score": 30
+    },
+    {
       "doc_num": "2026109870",
       "doc_type": "RELEASE",
       "doc_label": "Release",
@@ -56098,56 +55613,6 @@
         "LLC / corp owner"
       ],
       "score": 30
-    },
-    {
-      "doc_num": "2026109307",
-      "doc_type": "NOC",
-      "doc_label": "Notice of Commencement",
-      "filed": "",
-      "cat": "noc",
-      "cat_label": "Notice of Commencement",
-      "county": "Duval",
-      "state": "FL",
-      "owner": "WORTHMANN ROOFING AND GUTTERS",
-      "grantee": "SITTER JAMES",
-      "amount": 0,
-      "legal": "PT L 6 WILLIAM A OGILVIE ESTATE SEC 41-1N-26E",
-      "prop_address": "",
-      "prop_city": "",
-      "prop_state": "FL",
-      "prop_zip": "",
-      "mail_address": "",
-      "mail_city": "",
-      "mail_state": "",
-      "mail_zip": "",
-      "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026109307",
-      "flags": [],
-      "score": 20
-    },
-    {
-      "doc_num": "2026109365",
-      "doc_type": "NOC",
-      "doc_label": "Notice of Commencement",
-      "filed": "",
-      "cat": "noc",
-      "cat_label": "Notice of Commencement",
-      "county": "Duval",
-      "state": "FL",
-      "owner": "MCLAY MOBILE HOMES",
-      "grantee": "RANDOLPH VERSSIE",
-      "amount": 0,
-      "legal": "L 15 16 21 22 B 3 DUVAL CITY ADDITION AND FARMS",
-      "prop_address": "",
-      "prop_city": "",
-      "prop_state": "FL",
-      "prop_zip": "",
-      "mail_address": "",
-      "mail_city": "",
-      "mail_state": "",
-      "mail_zip": "",
-      "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026109365",
-      "flags": [],
-      "score": 20
     },
     {
       "doc_num": "2026109388",
@@ -57650,6 +57115,31 @@
       "score": 20
     },
     {
+      "doc_num": "2026112065",
+      "doc_type": "NOC",
+      "doc_label": "Notice of Commencement",
+      "filed": "",
+      "cat": "noc",
+      "cat_label": "Notice of Commencement",
+      "county": "Duval",
+      "state": "FL",
+      "owner": "AA SERVICE AND REPAIR-NORTH FLORIDA AC",
+      "grantee": "GOROSPE MICHAEL",
+      "amount": 0,
+      "legal": "L 52 SEASONS AT MIL COVE  PHYSICAL ADDRESS 4921 FROST LAKE DRIVE",
+      "prop_address": "",
+      "prop_city": "",
+      "prop_state": "FL",
+      "prop_zip": "",
+      "mail_address": "",
+      "mail_city": "",
+      "mail_state": "",
+      "mail_zip": "",
+      "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026112065",
+      "flags": [],
+      "score": 20
+    },
+    {
       "doc_num": "2026112223",
       "doc_type": "NOC",
       "doc_label": "Notice of Commencement",
@@ -58950,18 +58440,18 @@
       "score": 20
     },
     {
-      "doc_num": "2026109306",
-      "doc_type": "RELEASE",
-      "doc_label": "Release",
+      "doc_num": "2026114854",
+      "doc_type": "NOC",
+      "doc_label": "Notice of Commencement",
       "filed": "",
-      "cat": "release",
-      "cat_label": "Release",
+      "cat": "noc",
+      "cat_label": "Notice of Commencement",
       "county": "Duval",
       "state": "FL",
-      "owner": "ARMSTRONG NICHOLAS A",
-      "grantee": "SECRETARY OF HOUSING AND URBAN DEVELOPMENT",
+      "owner": "HERITAGE ROOFING OF NORTH FLORIDA",
+      "grantee": "TERRELL BRINT A",
       "amount": 0,
-      "legal": "PIN 162767-0000 PHYSICAL ADDRESS 1980 KUSAIE DR JACKSONVILLE FL 32246",
+      "legal": "L 241 TIMBER OAKS PHASE 2 SEC 39-1S-26E",
       "prop_address": "",
       "prop_city": "",
       "prop_state": "FL",
@@ -58970,23 +58460,23 @@
       "mail_city": "",
       "mail_state": "",
       "mail_zip": "",
-      "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026109306",
+      "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026114854",
       "flags": [],
       "score": 20
     },
     {
-      "doc_num": "2026109359",
-      "doc_type": "RELEASE",
-      "doc_label": "Release",
+      "doc_num": "2026114869",
+      "doc_type": "NOC",
+      "doc_label": "Notice of Commencement",
       "filed": "",
-      "cat": "release",
-      "cat_label": "Release",
+      "cat": "noc",
+      "cat_label": "Notice of Commencement",
       "county": "Duval",
       "state": "FL",
-      "owner": "COMPERE JEAN AMOS",
-      "grantee": "FOREST CREST HOMEOWNERS ASSOCIATION INC.",
+      "owner": "WINDOW WORLD OF NE FL",
+      "grantee": "MORSE LOIS",
       "amount": 0,
-      "legal": "L 33 MAHOGANY RUN",
+      "legal": "L 9 COLLINS RIDGE SEC 34-3S-25E",
       "prop_address": "",
       "prop_city": "",
       "prop_state": "FL",
@@ -58995,7 +58485,7 @@
       "mail_city": "",
       "mail_state": "",
       "mail_zip": "",
-      "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026109359",
+      "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026114869",
       "flags": [],
       "score": 20
     },
