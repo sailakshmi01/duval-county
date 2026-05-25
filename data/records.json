@@ -1,25 +1,25 @@
 {
-  "fetched_at": "2026-05-24T09:22:55.765Z",
+  "fetched_at": "2026-05-25T11:12:28.243Z",
   "source": "Florida County Clerks of Courts",
-  "date_range": "2026-05-17 to 2026-05-24",
-  "total": 2790,
+  "date_range": "2026-05-18 to 2026-05-25",
+  "total": 2858,
   "with_address": 0,
   "by_county": {
-    "Duval": 2790
+    "Duval": 2858
   },
   "by_type": {
     "CERTDEED": 9,
-    "JDG": 765,
-    "PROB": 130,
-    "JDGR": 23,
-    "JDGS": 471,
-    "LN": 204,
-    "LP": 58,
-    "FS": 65,
-    "NOC": 682,
+    "JDG": 795,
+    "PROB": 129,
+    "JDGR": 26,
+    "JDGS": 482,
+    "LN": 205,
+    "LP": 60,
+    "FS": 72,
+    "NOC": 689,
     "PTL_REL": 22,
-    "CCCJUDG": 147,
-    "RELEASE": 141,
+    "CCCJUDG": 153,
+    "RELEASE": 143,
     "NOTCONT": 1,
     "DTH": 39,
     "DVJ": 30,
@@ -398,7 +398,7 @@
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026115109",
       "flags": [
         "Probate / estate",
-        "127 distress docs"
+        "126 distress docs"
       ],
       "score": 65
     },
@@ -426,7 +426,7 @@
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026115112",
       "flags": [
         "Probate / estate",
-        "127 distress docs"
+        "126 distress docs"
       ],
       "score": 65
     },
@@ -454,7 +454,7 @@
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026115114",
       "flags": [
         "Probate / estate",
-        "127 distress docs"
+        "126 distress docs"
       ],
       "score": 65
     },
@@ -482,7 +482,7 @@
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026115117",
       "flags": [
         "Probate / estate",
-        "127 distress docs"
+        "126 distress docs"
       ],
       "score": 65
     },
@@ -510,7 +510,7 @@
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026115119",
       "flags": [
         "Probate / estate",
-        "127 distress docs"
+        "126 distress docs"
       ],
       "score": 65
     },
@@ -538,7 +538,7 @@
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026115120",
       "flags": [
         "Probate / estate",
-        "127 distress docs"
+        "126 distress docs"
       ],
       "score": 65
     },
@@ -566,7 +566,7 @@
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026115125",
       "flags": [
         "Probate / estate",
-        "127 distress docs"
+        "126 distress docs"
       ],
       "score": 65
     },
@@ -594,7 +594,7 @@
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026115128",
       "flags": [
         "Probate / estate",
-        "127 distress docs"
+        "126 distress docs"
       ],
       "score": 65
     },
@@ -622,7 +622,7 @@
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026115131",
       "flags": [
         "Probate / estate",
-        "127 distress docs"
+        "126 distress docs"
       ],
       "score": 65
     },
@@ -650,7 +650,7 @@
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026115141",
       "flags": [
         "Probate / estate",
-        "127 distress docs"
+        "126 distress docs"
       ],
       "score": 65
     },
@@ -678,7 +678,7 @@
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026115240",
       "flags": [
         "Probate / estate",
-        "127 distress docs"
+        "126 distress docs"
       ],
       "score": 65
     },
@@ -706,7 +706,7 @@
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026115243",
       "flags": [
         "Probate / estate",
-        "127 distress docs"
+        "126 distress docs"
       ],
       "score": 65
     },
@@ -734,7 +734,7 @@
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026115258",
       "flags": [
         "Probate / estate",
-        "127 distress docs"
+        "126 distress docs"
       ],
       "score": 65
     },
@@ -762,7 +762,7 @@
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026115269",
       "flags": [
         "Probate / estate",
-        "127 distress docs"
+        "126 distress docs"
       ],
       "score": 65
     },
@@ -790,7 +790,7 @@
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026115295",
       "flags": [
         "Probate / estate",
-        "127 distress docs"
+        "126 distress docs"
       ],
       "score": 65
     },
@@ -818,7 +818,7 @@
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026115302",
       "flags": [
         "Probate / estate",
-        "127 distress docs"
+        "126 distress docs"
       ],
       "score": 65
     },
@@ -846,7 +846,7 @@
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026115312",
       "flags": [
         "Probate / estate",
-        "127 distress docs"
+        "126 distress docs"
       ],
       "score": 65
     },
@@ -874,7 +874,7 @@
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026115315",
       "flags": [
         "Probate / estate",
-        "127 distress docs"
+        "126 distress docs"
       ],
       "score": 65
     },
@@ -902,7 +902,7 @@
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026115409",
       "flags": [
         "Probate / estate",
-        "127 distress docs"
+        "126 distress docs"
       ],
       "score": 65
     },
@@ -930,7 +930,7 @@
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026115593",
       "flags": [
         "Probate / estate",
-        "127 distress docs"
+        "126 distress docs"
       ],
       "score": 65
     },
@@ -958,7 +958,7 @@
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026115594",
       "flags": [
         "Probate / estate",
-        "127 distress docs"
+        "126 distress docs"
       ],
       "score": 65
     },
@@ -986,7 +986,7 @@
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026115605",
       "flags": [
         "Probate / estate",
-        "127 distress docs"
+        "126 distress docs"
       ],
       "score": 65
     },
@@ -1014,7 +1014,7 @@
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026115618",
       "flags": [
         "Probate / estate",
-        "127 distress docs"
+        "126 distress docs"
       ],
       "score": 65
     },
@@ -1042,7 +1042,7 @@
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026115667",
       "flags": [
         "Probate / estate",
-        "127 distress docs"
+        "126 distress docs"
       ],
       "score": 65
     },
@@ -1070,7 +1070,7 @@
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026115945",
       "flags": [
         "Probate / estate",
-        "127 distress docs"
+        "126 distress docs"
       ],
       "score": 65
     },
@@ -1098,7 +1098,7 @@
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026116239",
       "flags": [
         "Probate / estate",
-        "127 distress docs"
+        "126 distress docs"
       ],
       "score": 65
     },
@@ -1126,7 +1126,7 @@
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026116387",
       "flags": [
         "Probate / estate",
-        "127 distress docs"
+        "126 distress docs"
       ],
       "score": 65
     },
@@ -1154,7 +1154,7 @@
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026116399",
       "flags": [
         "Probate / estate",
-        "127 distress docs"
+        "126 distress docs"
       ],
       "score": 65
     },
@@ -1182,7 +1182,7 @@
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026116402",
       "flags": [
         "Probate / estate",
-        "127 distress docs"
+        "126 distress docs"
       ],
       "score": 65
     },
@@ -1210,7 +1210,7 @@
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026116407",
       "flags": [
         "Probate / estate",
-        "127 distress docs"
+        "126 distress docs"
       ],
       "score": 65
     },
@@ -1238,7 +1238,7 @@
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026116408",
       "flags": [
         "Probate / estate",
-        "127 distress docs"
+        "126 distress docs"
       ],
       "score": 65
     },
@@ -1266,7 +1266,7 @@
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026116412",
       "flags": [
         "Probate / estate",
-        "127 distress docs"
+        "126 distress docs"
       ],
       "score": 65
     },
@@ -1294,7 +1294,7 @@
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026116413",
       "flags": [
         "Probate / estate",
-        "127 distress docs"
+        "126 distress docs"
       ],
       "score": 65
     },
@@ -1322,7 +1322,7 @@
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026116416",
       "flags": [
         "Probate / estate",
-        "127 distress docs"
+        "126 distress docs"
       ],
       "score": 65
     },
@@ -1350,7 +1350,7 @@
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026116417",
       "flags": [
         "Probate / estate",
-        "127 distress docs"
+        "126 distress docs"
       ],
       "score": 65
     },
@@ -1378,7 +1378,7 @@
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026116437",
       "flags": [
         "Probate / estate",
-        "127 distress docs"
+        "126 distress docs"
       ],
       "score": 65
     },
@@ -1406,7 +1406,7 @@
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026116442",
       "flags": [
         "Probate / estate",
-        "127 distress docs"
+        "126 distress docs"
       ],
       "score": 65
     },
@@ -1434,7 +1434,7 @@
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026116445",
       "flags": [
         "Probate / estate",
-        "127 distress docs"
+        "126 distress docs"
       ],
       "score": 65
     },
@@ -1462,7 +1462,7 @@
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026116524",
       "flags": [
         "Probate / estate",
-        "127 distress docs"
+        "126 distress docs"
       ],
       "score": 65
     },
@@ -1490,7 +1490,7 @@
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026116553",
       "flags": [
         "Probate / estate",
-        "127 distress docs"
+        "126 distress docs"
       ],
       "score": 65
     },
@@ -1518,7 +1518,7 @@
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026116577",
       "flags": [
         "Probate / estate",
-        "127 distress docs"
+        "126 distress docs"
       ],
       "score": 65
     },
@@ -1546,7 +1546,7 @@
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026116581",
       "flags": [
         "Probate / estate",
-        "127 distress docs"
+        "126 distress docs"
       ],
       "score": 65
     },
@@ -1574,7 +1574,7 @@
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026116599",
       "flags": [
         "Probate / estate",
-        "127 distress docs"
+        "126 distress docs"
       ],
       "score": 65
     },
@@ -1602,7 +1602,7 @@
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026116983",
       "flags": [
         "Probate / estate",
-        "127 distress docs"
+        "126 distress docs"
       ],
       "score": 65
     },
@@ -1630,7 +1630,7 @@
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026117004",
       "flags": [
         "Probate / estate",
-        "127 distress docs"
+        "126 distress docs"
       ],
       "score": 65
     },
@@ -1658,7 +1658,7 @@
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026117011",
       "flags": [
         "Probate / estate",
-        "127 distress docs"
+        "126 distress docs"
       ],
       "score": 65
     },
@@ -1686,7 +1686,7 @@
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026117013",
       "flags": [
         "Probate / estate",
-        "127 distress docs"
+        "126 distress docs"
       ],
       "score": 65
     },
@@ -1714,7 +1714,7 @@
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026117269",
       "flags": [
         "Probate / estate",
-        "127 distress docs"
+        "126 distress docs"
       ],
       "score": 65
     },
@@ -1742,7 +1742,7 @@
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026117584",
       "flags": [
         "Probate / estate",
-        "127 distress docs"
+        "126 distress docs"
       ],
       "score": 65
     },
@@ -1770,7 +1770,7 @@
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026117639",
       "flags": [
         "Probate / estate",
-        "127 distress docs"
+        "126 distress docs"
       ],
       "score": 65
     },
@@ -1798,7 +1798,7 @@
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026117692",
       "flags": [
         "Probate / estate",
-        "127 distress docs"
+        "126 distress docs"
       ],
       "score": 65
     },
@@ -1826,7 +1826,7 @@
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026117736",
       "flags": [
         "Probate / estate",
-        "127 distress docs"
+        "126 distress docs"
       ],
       "score": 65
     },
@@ -1854,7 +1854,7 @@
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026117888",
       "flags": [
         "Probate / estate",
-        "127 distress docs"
+        "126 distress docs"
       ],
       "score": 65
     },
@@ -1882,7 +1882,7 @@
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026117919",
       "flags": [
         "Probate / estate",
-        "127 distress docs"
+        "126 distress docs"
       ],
       "score": 65
     },
@@ -1910,7 +1910,7 @@
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026117931",
       "flags": [
         "Probate / estate",
-        "127 distress docs"
+        "126 distress docs"
       ],
       "score": 65
     },
@@ -1938,7 +1938,7 @@
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026117934",
       "flags": [
         "Probate / estate",
-        "127 distress docs"
+        "126 distress docs"
       ],
       "score": 65
     },
@@ -1966,7 +1966,7 @@
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026117982",
       "flags": [
         "Probate / estate",
-        "127 distress docs"
+        "126 distress docs"
       ],
       "score": 65
     },
@@ -1994,7 +1994,7 @@
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026117983",
       "flags": [
         "Probate / estate",
-        "127 distress docs"
+        "126 distress docs"
       ],
       "score": 65
     },
@@ -2022,7 +2022,7 @@
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026118046",
       "flags": [
         "Probate / estate",
-        "127 distress docs"
+        "126 distress docs"
       ],
       "score": 65
     },
@@ -2050,7 +2050,7 @@
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026118047",
       "flags": [
         "Probate / estate",
-        "127 distress docs"
+        "126 distress docs"
       ],
       "score": 65
     },
@@ -2078,7 +2078,7 @@
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026118073",
       "flags": [
         "Probate / estate",
-        "127 distress docs"
+        "126 distress docs"
       ],
       "score": 65
     },
@@ -2106,7 +2106,7 @@
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026118312",
       "flags": [
         "Probate / estate",
-        "127 distress docs"
+        "126 distress docs"
       ],
       "score": 65
     },
@@ -2134,7 +2134,7 @@
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026118507",
       "flags": [
         "Probate / estate",
-        "127 distress docs"
+        "126 distress docs"
       ],
       "score": 65
     },
@@ -2162,7 +2162,7 @@
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026118510",
       "flags": [
         "Probate / estate",
-        "127 distress docs"
+        "126 distress docs"
       ],
       "score": 65
     },
@@ -2190,7 +2190,7 @@
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026118515",
       "flags": [
         "Probate / estate",
-        "127 distress docs"
+        "126 distress docs"
       ],
       "score": 65
     },
@@ -2218,7 +2218,7 @@
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026118518",
       "flags": [
         "Probate / estate",
-        "127 distress docs"
+        "126 distress docs"
       ],
       "score": 65
     },
@@ -2246,7 +2246,7 @@
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026118520",
       "flags": [
         "Probate / estate",
-        "127 distress docs"
+        "126 distress docs"
       ],
       "score": 65
     },
@@ -2274,7 +2274,7 @@
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026118522",
       "flags": [
         "Probate / estate",
-        "127 distress docs"
+        "126 distress docs"
       ],
       "score": 65
     },
@@ -2302,7 +2302,7 @@
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026118528",
       "flags": [
         "Probate / estate",
-        "127 distress docs"
+        "126 distress docs"
       ],
       "score": 65
     },
@@ -2330,7 +2330,7 @@
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026118530",
       "flags": [
         "Probate / estate",
-        "127 distress docs"
+        "126 distress docs"
       ],
       "score": 65
     },
@@ -2358,7 +2358,7 @@
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026118532",
       "flags": [
         "Probate / estate",
-        "127 distress docs"
+        "126 distress docs"
       ],
       "score": 65
     },
@@ -2386,7 +2386,7 @@
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026118545",
       "flags": [
         "Probate / estate",
-        "127 distress docs"
+        "126 distress docs"
       ],
       "score": 65
     },
@@ -2414,7 +2414,7 @@
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026118548",
       "flags": [
         "Probate / estate",
-        "127 distress docs"
+        "126 distress docs"
       ],
       "score": 65
     },
@@ -2442,7 +2442,7 @@
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026118583",
       "flags": [
         "Probate / estate",
-        "127 distress docs"
+        "126 distress docs"
       ],
       "score": 65
     },
@@ -2470,7 +2470,7 @@
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026118604",
       "flags": [
         "Probate / estate",
-        "127 distress docs"
+        "126 distress docs"
       ],
       "score": 65
     },
@@ -2498,7 +2498,7 @@
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026118606",
       "flags": [
         "Probate / estate",
-        "127 distress docs"
+        "126 distress docs"
       ],
       "score": 65
     },
@@ -2526,7 +2526,7 @@
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026118614",
       "flags": [
         "Probate / estate",
-        "127 distress docs"
+        "126 distress docs"
       ],
       "score": 65
     },
@@ -2554,7 +2554,7 @@
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026118709",
       "flags": [
         "Probate / estate",
-        "127 distress docs"
+        "126 distress docs"
       ],
       "score": 65
     },
@@ -2582,7 +2582,7 @@
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026118743",
       "flags": [
         "Probate / estate",
-        "127 distress docs"
+        "126 distress docs"
       ],
       "score": 65
     },
@@ -2610,7 +2610,7 @@
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026118744",
       "flags": [
         "Probate / estate",
-        "127 distress docs"
+        "126 distress docs"
       ],
       "score": 65
     },
@@ -2638,7 +2638,7 @@
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026118748",
       "flags": [
         "Probate / estate",
-        "127 distress docs"
+        "126 distress docs"
       ],
       "score": 65
     },
@@ -2666,7 +2666,7 @@
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026119095",
       "flags": [
         "Probate / estate",
-        "127 distress docs"
+        "126 distress docs"
       ],
       "score": 65
     },
@@ -2694,7 +2694,7 @@
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026119306",
       "flags": [
         "Probate / estate",
-        "127 distress docs"
+        "126 distress docs"
       ],
       "score": 65
     },
@@ -2722,7 +2722,7 @@
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026119771",
       "flags": [
         "Probate / estate",
-        "127 distress docs"
+        "126 distress docs"
       ],
       "score": 65
     },
@@ -2750,7 +2750,7 @@
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026119910",
       "flags": [
         "Probate / estate",
-        "127 distress docs"
+        "126 distress docs"
       ],
       "score": 65
     },
@@ -2778,7 +2778,7 @@
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026119955",
       "flags": [
         "Probate / estate",
-        "127 distress docs"
+        "126 distress docs"
       ],
       "score": 65
     },
@@ -2806,7 +2806,7 @@
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026120003",
       "flags": [
         "Probate / estate",
-        "127 distress docs"
+        "126 distress docs"
       ],
       "score": 65
     },
@@ -2834,7 +2834,7 @@
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026120004",
       "flags": [
         "Probate / estate",
-        "127 distress docs"
+        "126 distress docs"
       ],
       "score": 65
     },
@@ -2848,7 +2848,7 @@
       "county": "Duval",
       "state": "FL",
       "owner": "ESTATE",
-      "grantee": "WALTHOUR GWENDOLYN LORINE DECEASED",
+      "grantee": "WALTHOUR GWENDOLYN DECEASED",
       "amount": 0,
       "legal": "",
       "prop_address": "",
@@ -2862,7 +2862,7 @@
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026120023",
       "flags": [
         "Probate / estate",
-        "127 distress docs"
+        "126 distress docs"
       ],
       "score": 65
     },
@@ -2890,7 +2890,7 @@
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026120035",
       "flags": [
         "Probate / estate",
-        "127 distress docs"
+        "126 distress docs"
       ],
       "score": 65
     },
@@ -2918,7 +2918,7 @@
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026120036",
       "flags": [
         "Probate / estate",
-        "127 distress docs"
+        "126 distress docs"
       ],
       "score": 65
     },
@@ -2946,7 +2946,7 @@
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026120039",
       "flags": [
         "Probate / estate",
-        "127 distress docs"
+        "126 distress docs"
       ],
       "score": 65
     },
@@ -2974,35 +2974,7 @@
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026120040",
       "flags": [
         "Probate / estate",
-        "127 distress docs"
-      ],
-      "score": 65
-    },
-    {
-      "doc_num": "2026120041",
-      "doc_type": "PROB",
-      "doc_label": "Probate",
-      "filed": "",
-      "cat": "probate",
-      "cat_label": "Probate / Estate",
-      "county": "Duval",
-      "state": "FL",
-      "owner": "ESTATE",
-      "grantee": "THOMPSON ROBERT LEON RED DECEASED",
-      "amount": 0,
-      "legal": "L 11 B 9 ARLINGTON HILLS &C",
-      "prop_address": "",
-      "prop_city": "",
-      "prop_state": "FL",
-      "prop_zip": "",
-      "mail_address": "",
-      "mail_city": "",
-      "mail_state": "",
-      "mail_zip": "",
-      "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026120041",
-      "flags": [
-        "Probate / estate",
-        "127 distress docs"
+        "126 distress docs"
       ],
       "score": 65
     },
@@ -3030,7 +3002,7 @@
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026120134",
       "flags": [
         "Probate / estate",
-        "127 distress docs"
+        "126 distress docs"
       ],
       "score": 65
     },
@@ -3058,7 +3030,7 @@
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026120155",
       "flags": [
         "Probate / estate",
-        "127 distress docs"
+        "126 distress docs"
       ],
       "score": 65
     },
@@ -3086,7 +3058,7 @@
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026120174",
       "flags": [
         "Probate / estate",
-        "127 distress docs"
+        "126 distress docs"
       ],
       "score": 65
     },
@@ -3114,7 +3086,7 @@
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026120185",
       "flags": [
         "Probate / estate",
-        "127 distress docs"
+        "126 distress docs"
       ],
       "score": 65
     },
@@ -3142,7 +3114,7 @@
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026120186",
       "flags": [
         "Probate / estate",
-        "127 distress docs"
+        "126 distress docs"
       ],
       "score": 65
     },
@@ -3170,7 +3142,7 @@
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026120194",
       "flags": [
         "Probate / estate",
-        "127 distress docs"
+        "126 distress docs"
       ],
       "score": 65
     },
@@ -3198,7 +3170,7 @@
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026120195",
       "flags": [
         "Probate / estate",
-        "127 distress docs"
+        "126 distress docs"
       ],
       "score": 65
     },
@@ -3226,7 +3198,7 @@
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026120196",
       "flags": [
         "Probate / estate",
-        "127 distress docs"
+        "126 distress docs"
       ],
       "score": 65
     },
@@ -3254,7 +3226,7 @@
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026120208",
       "flags": [
         "Probate / estate",
-        "127 distress docs"
+        "126 distress docs"
       ],
       "score": 65
     },
@@ -3282,7 +3254,7 @@
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026120230",
       "flags": [
         "Probate / estate",
-        "127 distress docs"
+        "126 distress docs"
       ],
       "score": 65
     },
@@ -3310,7 +3282,7 @@
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026120231",
       "flags": [
         "Probate / estate",
-        "127 distress docs"
+        "126 distress docs"
       ],
       "score": 65
     },
@@ -3338,7 +3310,7 @@
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026120249",
       "flags": [
         "Probate / estate",
-        "127 distress docs"
+        "126 distress docs"
       ],
       "score": 65
     },
@@ -3366,7 +3338,7 @@
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026120250",
       "flags": [
         "Probate / estate",
-        "127 distress docs"
+        "126 distress docs"
       ],
       "score": 65
     },
@@ -3394,7 +3366,7 @@
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026120282",
       "flags": [
         "Probate / estate",
-        "127 distress docs"
+        "126 distress docs"
       ],
       "score": 65
     },
@@ -3422,7 +3394,7 @@
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026120294",
       "flags": [
         "Probate / estate",
-        "127 distress docs"
+        "126 distress docs"
       ],
       "score": 65
     },
@@ -3450,7 +3422,7 @@
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026120309",
       "flags": [
         "Probate / estate",
-        "127 distress docs"
+        "126 distress docs"
       ],
       "score": 65
     },
@@ -3478,7 +3450,7 @@
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026120310",
       "flags": [
         "Probate / estate",
-        "127 distress docs"
+        "126 distress docs"
       ],
       "score": 65
     },
@@ -3506,7 +3478,7 @@
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026120330",
       "flags": [
         "Probate / estate",
-        "127 distress docs"
+        "126 distress docs"
       ],
       "score": 65
     },
@@ -3534,7 +3506,7 @@
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026120335",
       "flags": [
         "Probate / estate",
-        "127 distress docs"
+        "126 distress docs"
       ],
       "score": 65
     },
@@ -3562,7 +3534,7 @@
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026120336",
       "flags": [
         "Probate / estate",
-        "127 distress docs"
+        "126 distress docs"
       ],
       "score": 65
     },
@@ -3590,7 +3562,7 @@
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026120365",
       "flags": [
         "Probate / estate",
-        "127 distress docs"
+        "126 distress docs"
       ],
       "score": 65
     },
@@ -3618,7 +3590,7 @@
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026120608",
       "flags": [
         "Probate / estate",
-        "127 distress docs"
+        "126 distress docs"
       ],
       "score": 65
     },
@@ -3646,7 +3618,7 @@
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026120626",
       "flags": [
         "Probate / estate",
-        "127 distress docs"
+        "126 distress docs"
       ],
       "score": 65
     },
@@ -3674,7 +3646,7 @@
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026120648",
       "flags": [
         "Probate / estate",
-        "127 distress docs"
+        "126 distress docs"
       ],
       "score": 65
     },
@@ -3702,7 +3674,7 @@
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026120654",
       "flags": [
         "Probate / estate",
-        "127 distress docs"
+        "126 distress docs"
       ],
       "score": 65
     },
@@ -3730,7 +3702,7 @@
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026120669",
       "flags": [
         "Probate / estate",
-        "127 distress docs"
+        "126 distress docs"
       ],
       "score": 65
     },
@@ -3758,7 +3730,7 @@
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026120670",
       "flags": [
         "Probate / estate",
-        "127 distress docs"
+        "126 distress docs"
       ],
       "score": 65
     },
@@ -3786,7 +3758,7 @@
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026120822",
       "flags": [
         "Probate / estate",
-        "127 distress docs"
+        "126 distress docs"
       ],
       "score": 65
     },
@@ -3814,7 +3786,7 @@
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026120826",
       "flags": [
         "Probate / estate",
-        "127 distress docs"
+        "126 distress docs"
       ],
       "score": 65
     },
@@ -3842,7 +3814,7 @@
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026120832",
       "flags": [
         "Probate / estate",
-        "127 distress docs"
+        "126 distress docs"
       ],
       "score": 65
     },
@@ -3870,7 +3842,7 @@
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026120840",
       "flags": [
         "Probate / estate",
-        "127 distress docs"
+        "126 distress docs"
       ],
       "score": 65
     },
@@ -3898,7 +3870,7 @@
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026121033",
       "flags": [
         "Probate / estate",
-        "127 distress docs"
+        "126 distress docs"
       ],
       "score": 65
     },
@@ -3926,7 +3898,7 @@
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026121047",
       "flags": [
         "Probate / estate",
-        "127 distress docs"
+        "126 distress docs"
       ],
       "score": 65
     },
@@ -5139,6 +5111,35 @@
       "mail_state": "",
       "mail_zip": "",
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026119964",
+      "flags": [
+        "Lien / UCC",
+        "Multiple distress docs",
+        "LLC / corp owner"
+      ],
+      "score": 55
+    },
+    {
+      "doc_num": "2026121261",
+      "doc_type": "FS",
+      "doc_label": "Finance Statement / UCC",
+      "filed": "",
+      "cat": "lien",
+      "cat_label": "UCC / Finance Lien",
+      "county": "Duval",
+      "state": "FL",
+      "owner": "ALL AMERICAN OIL LLC",
+      "grantee": "UNITED COMMUNITY BANK",
+      "amount": 0,
+      "legal": "L 2 3 COMMISSIONERS SUBDIVISION OF BARTLEY ESTATES",
+      "prop_address": "",
+      "prop_city": "",
+      "prop_state": "FL",
+      "prop_zip": "",
+      "mail_address": "",
+      "mail_city": "",
+      "mail_state": "",
+      "mail_zip": "",
+      "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026121261",
       "flags": [
         "Lien / UCC",
         "Multiple distress docs",
@@ -10579,6 +10580,90 @@
       "score": 50
     },
     {
+      "doc_num": "2026121217",
+      "doc_type": "JDG",
+      "doc_label": "Judgment",
+      "filed": "",
+      "cat": "judgment",
+      "cat_label": "Judgment / Lien",
+      "county": "Duval",
+      "state": "FL",
+      "owner": "SIMMONS CHRISTINA MARIE",
+      "grantee": "FLORIDA STATE OF",
+      "amount": 0,
+      "legal": "",
+      "prop_address": "",
+      "prop_city": "",
+      "prop_state": "FL",
+      "prop_zip": "",
+      "mail_address": "",
+      "mail_city": "",
+      "mail_state": "",
+      "mail_zip": "",
+      "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026121217",
+      "flags": [
+        "Judgment lien",
+        "Multiple distress docs"
+      ],
+      "score": 50
+    },
+    {
+      "doc_num": "2026121278",
+      "doc_type": "JDG",
+      "doc_label": "Judgment",
+      "filed": "",
+      "cat": "judgment",
+      "cat_label": "Judgment / Lien",
+      "county": "Duval",
+      "state": "FL",
+      "owner": "RODRIGUEZ GABRIELLE E",
+      "grantee": "SOUTHWOOD FINANCIAL TRUST I",
+      "amount": 0,
+      "legal": "",
+      "prop_address": "",
+      "prop_city": "",
+      "prop_state": "FL",
+      "prop_zip": "",
+      "mail_address": "",
+      "mail_city": "",
+      "mail_state": "",
+      "mail_zip": "",
+      "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026121278",
+      "flags": [
+        "Judgment lien",
+        "Multiple distress docs"
+      ],
+      "score": 50
+    },
+    {
+      "doc_num": "2026121307",
+      "doc_type": "JDG",
+      "doc_label": "Judgment",
+      "filed": "",
+      "cat": "judgment",
+      "cat_label": "Judgment / Lien",
+      "county": "Duval",
+      "state": "FL",
+      "owner": "RODRIGUEZ GABRIELLE E",
+      "grantee": "SOUTHWOOD FINANCIAL TRUST I",
+      "amount": 0,
+      "legal": "",
+      "prop_address": "",
+      "prop_city": "",
+      "prop_state": "FL",
+      "prop_zip": "",
+      "mail_address": "",
+      "mail_city": "",
+      "mail_state": "",
+      "mail_zip": "",
+      "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026121307",
+      "flags": [
+        "Judgment lien",
+        "Multiple distress docs"
+      ],
+      "score": 50
+    },
+    {
       "doc_num": "2026115305",
       "doc_type": "JDGR",
       "doc_label": "Judgment / Restitution",
@@ -10719,6 +10804,34 @@
       "score": 50
     },
     {
+      "doc_num": "2026116863",
+      "doc_type": "JDGR",
+      "doc_label": "Judgment / Restitution",
+      "filed": "",
+      "cat": "judgment",
+      "cat_label": "Judgment / Lien",
+      "county": "Duval",
+      "state": "FL",
+      "owner": "CUFF ERIK TREALL",
+      "grantee": "FLORIDA STATE OF",
+      "amount": 0,
+      "legal": "",
+      "prop_address": "",
+      "prop_city": "",
+      "prop_state": "FL",
+      "prop_zip": "",
+      "mail_address": "",
+      "mail_city": "",
+      "mail_state": "",
+      "mail_zip": "",
+      "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026116863",
+      "flags": [
+        "Judgment lien",
+        "Multiple distress docs"
+      ],
+      "score": 50
+    },
+    {
       "doc_num": "2026119625",
       "doc_type": "JDGR",
       "doc_label": "Judgment / Restitution",
@@ -10796,6 +10909,90 @@
       "mail_state": "",
       "mail_zip": "",
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026121133",
+      "flags": [
+        "Judgment lien",
+        "Multiple distress docs"
+      ],
+      "score": 50
+    },
+    {
+      "doc_num": "2026121216",
+      "doc_type": "JDGR",
+      "doc_label": "Judgment / Restitution",
+      "filed": "",
+      "cat": "judgment",
+      "cat_label": "Judgment / Lien",
+      "county": "Duval",
+      "state": "FL",
+      "owner": "SIMMONS CHRISTINA MARIE",
+      "grantee": "FLORIDA STATE OF",
+      "amount": 0,
+      "legal": "",
+      "prop_address": "",
+      "prop_city": "",
+      "prop_state": "FL",
+      "prop_zip": "",
+      "mail_address": "",
+      "mail_city": "",
+      "mail_state": "",
+      "mail_zip": "",
+      "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026121216",
+      "flags": [
+        "Judgment lien",
+        "Multiple distress docs"
+      ],
+      "score": 50
+    },
+    {
+      "doc_num": "2026121228",
+      "doc_type": "JDGR",
+      "doc_label": "Judgment / Restitution",
+      "filed": "",
+      "cat": "judgment",
+      "cat_label": "Judgment / Lien",
+      "county": "Duval",
+      "state": "FL",
+      "owner": "WHITAKER JAYDON BRYCE",
+      "grantee": "FLORIDA STATE OF",
+      "amount": 0,
+      "legal": "",
+      "prop_address": "",
+      "prop_city": "",
+      "prop_state": "FL",
+      "prop_zip": "",
+      "mail_address": "",
+      "mail_city": "",
+      "mail_state": "",
+      "mail_zip": "",
+      "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026121228",
+      "flags": [
+        "Judgment lien",
+        "Multiple distress docs"
+      ],
+      "score": 50
+    },
+    {
+      "doc_num": "2026121240",
+      "doc_type": "JDGR",
+      "doc_label": "Judgment / Restitution",
+      "filed": "",
+      "cat": "judgment",
+      "cat_label": "Judgment / Lien",
+      "county": "Duval",
+      "state": "FL",
+      "owner": "WHITAKER JAYDON BRYCE",
+      "grantee": "FLORIDA STATE OF",
+      "amount": 0,
+      "legal": "",
+      "prop_address": "",
+      "prop_city": "",
+      "prop_state": "FL",
+      "prop_zip": "",
+      "mail_address": "",
+      "mail_city": "",
+      "mail_state": "",
+      "mail_zip": "",
+      "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026121240",
       "flags": [
         "Judgment lien",
         "Multiple distress docs"
@@ -12084,6 +12281,90 @@
       "mail_state": "",
       "mail_zip": "",
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026120924",
+      "flags": [
+        "Judgment lien",
+        "Multiple distress docs"
+      ],
+      "score": 50
+    },
+    {
+      "doc_num": "2026121249",
+      "doc_type": "JDGS",
+      "doc_label": "Judgment / Sentence",
+      "filed": "",
+      "cat": "judgment",
+      "cat_label": "Judgment / Lien",
+      "county": "Duval",
+      "state": "FL",
+      "owner": "CUFF ERIK TREALL",
+      "grantee": "FLORIDA STATE OF",
+      "amount": 0,
+      "legal": "",
+      "prop_address": "",
+      "prop_city": "",
+      "prop_state": "FL",
+      "prop_zip": "",
+      "mail_address": "",
+      "mail_city": "",
+      "mail_state": "",
+      "mail_zip": "",
+      "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026121249",
+      "flags": [
+        "Judgment lien",
+        "Multiple distress docs"
+      ],
+      "score": 50
+    },
+    {
+      "doc_num": "2026121279",
+      "doc_type": "JDGS",
+      "doc_label": "Judgment / Sentence",
+      "filed": "",
+      "cat": "judgment",
+      "cat_label": "Judgment / Lien",
+      "county": "Duval",
+      "state": "FL",
+      "owner": "MAAAK ACHIE ELYES",
+      "grantee": "FLORIDA STATE OF",
+      "amount": 0,
+      "legal": "",
+      "prop_address": "",
+      "prop_city": "",
+      "prop_state": "FL",
+      "prop_zip": "",
+      "mail_address": "",
+      "mail_city": "",
+      "mail_state": "",
+      "mail_zip": "",
+      "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026121279",
+      "flags": [
+        "Judgment lien",
+        "Multiple distress docs"
+      ],
+      "score": 50
+    },
+    {
+      "doc_num": "2026121282",
+      "doc_type": "JDGS",
+      "doc_label": "Judgment / Sentence",
+      "filed": "",
+      "cat": "judgment",
+      "cat_label": "Judgment / Lien",
+      "county": "Duval",
+      "state": "FL",
+      "owner": "MAAAK ACHIE ELYES",
+      "grantee": "FLORIDA STATE OF",
+      "amount": 0,
+      "legal": "",
+      "prop_address": "",
+      "prop_city": "",
+      "prop_state": "FL",
+      "prop_zip": "",
+      "mail_address": "",
+      "mail_city": "",
+      "mail_state": "",
+      "mail_zip": "",
+      "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026121282",
       "flags": [
         "Judgment lien",
         "Multiple distress docs"
@@ -13682,6 +13963,60 @@
       "mail_state": "",
       "mail_zip": "",
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026121128",
+      "flags": [
+        "Pre/post-foreclosure"
+      ],
+      "score": 45
+    },
+    {
+      "doc_num": "2026121186",
+      "doc_type": "LP",
+      "doc_label": "Lis Pendens",
+      "filed": "",
+      "cat": "foreclosure",
+      "cat_label": "Pre-Foreclosure",
+      "county": "Duval",
+      "state": "FL",
+      "owner": "CLEMONS STEVEN KYLE",
+      "grantee": "THE LAW OFFICES OF RANDAL S REEP P A",
+      "amount": 0,
+      "legal": "L 55 ASHLEY WOODS U 1",
+      "prop_address": "",
+      "prop_city": "",
+      "prop_state": "FL",
+      "prop_zip": "",
+      "mail_address": "",
+      "mail_city": "",
+      "mail_state": "",
+      "mail_zip": "",
+      "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026121186",
+      "flags": [
+        "Pre/post-foreclosure"
+      ],
+      "score": 45
+    },
+    {
+      "doc_num": "2026121256",
+      "doc_type": "LP",
+      "doc_label": "Lis Pendens",
+      "filed": "",
+      "cat": "foreclosure",
+      "cat_label": "Pre-Foreclosure",
+      "county": "Duval",
+      "state": "FL",
+      "owner": "KARANAM ARJUNA KASYAP",
+      "grantee": "SEATON CREEK HOMEOWNERS ASSOCIATION INC",
+      "amount": 0,
+      "legal": "L 147 SEATON CREEK RESERVE PHASE 2",
+      "prop_address": "",
+      "prop_city": "",
+      "prop_state": "FL",
+      "prop_zip": "",
+      "mail_address": "",
+      "mail_city": "",
+      "mail_state": "",
+      "mail_zip": "",
+      "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026121256",
       "flags": [
         "Pre/post-foreclosure"
       ],
@@ -15473,6 +15808,34 @@
       "mail_state": "",
       "mail_zip": "",
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026121168",
+      "flags": [
+        "Judgment lien",
+        "LLC / corp owner"
+      ],
+      "score": 45
+    },
+    {
+      "doc_num": "2026121284",
+      "doc_type": "JDG",
+      "doc_label": "Judgment",
+      "filed": "",
+      "cat": "judgment",
+      "cat_label": "Judgment / Lien",
+      "county": "Duval",
+      "state": "FL",
+      "owner": "MOUNTAINEER FLOORING AND CABINETRY LLC",
+      "grantee": "OHIO SECURITY INSURANCE COMPANY",
+      "amount": 0,
+      "legal": "",
+      "prop_address": "",
+      "prop_city": "",
+      "prop_state": "FL",
+      "prop_zip": "",
+      "mail_address": "",
+      "mail_city": "",
+      "mail_state": "",
+      "mail_zip": "",
+      "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026121284",
       "flags": [
         "Judgment lien",
         "LLC / corp owner"
@@ -17289,7 +17652,7 @@
       "mail_zip": "",
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026115441",
       "flags": [
-        "14 distress docs"
+        "16 distress docs"
       ],
       "score": 45
     },
@@ -17343,7 +17706,7 @@
       "mail_zip": "",
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026115456",
       "flags": [
-        "14 distress docs"
+        "16 distress docs"
       ],
       "score": 45
     },
@@ -17370,7 +17733,7 @@
       "mail_zip": "",
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026115460",
       "flags": [
-        "14 distress docs"
+        "16 distress docs"
       ],
       "score": 45
     },
@@ -17397,7 +17760,7 @@
       "mail_zip": "",
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026115463",
       "flags": [
-        "14 distress docs"
+        "16 distress docs"
       ],
       "score": 45
     },
@@ -17424,7 +17787,7 @@
       "mail_zip": "",
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026115472",
       "flags": [
-        "14 distress docs"
+        "16 distress docs"
       ],
       "score": 45
     },
@@ -17451,7 +17814,7 @@
       "mail_zip": "",
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026115480",
       "flags": [
-        "14 distress docs"
+        "16 distress docs"
       ],
       "score": 45
     },
@@ -18487,7 +18850,7 @@
       "mail_zip": "",
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026116636",
       "flags": [
-        "14 distress docs"
+        "16 distress docs"
       ],
       "score": 45
     },
@@ -18514,7 +18877,7 @@
       "mail_zip": "",
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026116726",
       "flags": [
-        "14 distress docs"
+        "16 distress docs"
       ],
       "score": 45
     },
@@ -19605,7 +19968,7 @@
       "mail_zip": "",
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026117577",
       "flags": [
-        "14 distress docs"
+        "16 distress docs"
       ],
       "score": 45
     },
@@ -20583,7 +20946,7 @@
       "mail_zip": "",
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026117937",
       "flags": [
-        "14 distress docs"
+        "16 distress docs"
       ],
       "score": 45
     },
@@ -21348,6 +21711,33 @@
       "flags": [
         "Multiple distress docs",
         "LLC / corp owner"
+      ],
+      "score": 45
+    },
+    {
+      "doc_num": "2026118694",
+      "doc_type": "NOC",
+      "doc_label": "Notice of Commencement",
+      "filed": "",
+      "cat": "noc",
+      "cat_label": "Notice of Commencement",
+      "county": "Duval",
+      "state": "FL",
+      "owner": "HERITAGE ROOFING OF NORTH FLORIDA",
+      "grantee": "BACON KRISTOPHER P",
+      "amount": 0,
+      "legal": "L 29 41 SANS SOUCI SEC 20 56-3S-27E",
+      "prop_address": "",
+      "prop_city": "",
+      "prop_state": "FL",
+      "prop_zip": "",
+      "mail_address": "",
+      "mail_city": "",
+      "mail_state": "",
+      "mail_zip": "",
+      "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026118694",
+      "flags": [
+        "3 distress docs"
       ],
       "score": 45
     },
@@ -22436,7 +22826,7 @@
       "mail_zip": "",
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026119904",
       "flags": [
-        "14 distress docs"
+        "16 distress docs"
       ],
       "score": 45
     },
@@ -22463,7 +22853,7 @@
       "mail_zip": "",
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026119907",
       "flags": [
-        "14 distress docs"
+        "16 distress docs"
       ],
       "score": 45
     },
@@ -22490,7 +22880,7 @@
       "mail_zip": "",
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026119940",
       "flags": [
-        "14 distress docs"
+        "16 distress docs"
       ],
       "score": 45
     },
@@ -22626,7 +23016,7 @@
       "mail_zip": "",
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026120059",
       "flags": [
-        "14 distress docs"
+        "16 distress docs"
       ],
       "score": 45
     },
@@ -23253,6 +23643,33 @@
       "score": 45
     },
     {
+      "doc_num": "2026120679",
+      "doc_type": "NOC",
+      "doc_label": "Notice of Commencement",
+      "filed": "",
+      "cat": "noc",
+      "cat_label": "Notice of Commencement",
+      "county": "Duval",
+      "state": "FL",
+      "owner": "HERITAGE ROOFING OF NORTH FLORIDA",
+      "grantee": "SINGH ARDINA SETH",
+      "amount": 0,
+      "legal": "L121 WATERFLEAF U1 SEC 39-2S-28E",
+      "prop_address": "",
+      "prop_city": "",
+      "prop_state": "FL",
+      "prop_zip": "",
+      "mail_address": "",
+      "mail_city": "",
+      "mail_state": "",
+      "mail_zip": "",
+      "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026120679",
+      "flags": [
+        "3 distress docs"
+      ],
+      "score": 45
+    },
+    {
       "doc_num": "2026120781",
       "doc_type": "NOC",
       "doc_label": "Notice of Commencement",
@@ -23553,6 +23970,87 @@
       "score": 45
     },
     {
+      "doc_num": "2026121192",
+      "doc_type": "NOC",
+      "doc_label": "Notice of Commencement",
+      "filed": "",
+      "cat": "noc",
+      "cat_label": "Notice of Commencement",
+      "county": "Duval",
+      "state": "FL",
+      "owner": "SNYDER AIR CONDITIONING PLUMBING & ELECTRIC",
+      "grantee": "LOCKE PAUL",
+      "amount": 0,
+      "legal": "PT WATER L 4 IVES AND PATTERSONS SEC 1-3S-26E",
+      "prop_address": "",
+      "prop_city": "",
+      "prop_state": "FL",
+      "prop_zip": "",
+      "mail_address": "",
+      "mail_city": "",
+      "mail_state": "",
+      "mail_zip": "",
+      "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026121192",
+      "flags": [
+        "16 distress docs"
+      ],
+      "score": 45
+    },
+    {
+      "doc_num": "2026121193",
+      "doc_type": "NOC",
+      "doc_label": "Notice of Commencement",
+      "filed": "",
+      "cat": "noc",
+      "cat_label": "Notice of Commencement",
+      "county": "Duval",
+      "state": "FL",
+      "owner": "SNYDER AIR CONDITIONING PLUMBING & ELECTRIC",
+      "grantee": "WASHINGTON LEVI",
+      "amount": 0,
+      "legal": "L 1 B 1 CRYSTAL SPRINGS U 1 SEC 29-2S-25E",
+      "prop_address": "",
+      "prop_city": "",
+      "prop_state": "FL",
+      "prop_zip": "",
+      "mail_address": "",
+      "mail_city": "",
+      "mail_state": "",
+      "mail_zip": "",
+      "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026121193",
+      "flags": [
+        "16 distress docs"
+      ],
+      "score": 45
+    },
+    {
+      "doc_num": "2026121200",
+      "doc_type": "NOC",
+      "doc_label": "Notice of Commencement",
+      "filed": "",
+      "cat": "noc",
+      "cat_label": "Notice of Commencement",
+      "county": "Duval",
+      "state": "FL",
+      "owner": "HERITAGE ROOFING OF NORTH FLORIDA",
+      "grantee": "FORD BREANNE L",
+      "amount": 0,
+      "legal": "L 77 NORTH CAMPUS SEC 8-1S-26E",
+      "prop_address": "",
+      "prop_city": "",
+      "prop_state": "FL",
+      "prop_zip": "",
+      "mail_address": "",
+      "mail_city": "",
+      "mail_state": "",
+      "mail_zip": "",
+      "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026121200",
+      "flags": [
+        "3 distress docs"
+      ],
+      "score": 45
+    },
+    {
       "doc_num": "2026116202",
       "doc_type": "RELEASE",
       "doc_label": "Release",
@@ -23798,6 +24296,34 @@
       "mail_state": "",
       "mail_zip": "",
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026119228",
+      "flags": [
+        "Multiple distress docs",
+        "LLC / corp owner"
+      ],
+      "score": 45
+    },
+    {
+      "doc_num": "2026120065",
+      "doc_type": "RELEASE",
+      "doc_label": "Release",
+      "filed": "",
+      "cat": "release",
+      "cat_label": "Release",
+      "county": "Duval",
+      "state": "FL",
+      "owner": "ALL AMERICAN OIL LLC",
+      "grantee": "UNITED COMMUNITY BANK",
+      "amount": 0,
+      "legal": "",
+      "prop_address": "",
+      "prop_city": "",
+      "prop_state": "FL",
+      "prop_zip": "",
+      "mail_address": "",
+      "mail_city": "",
+      "mail_state": "",
+      "mail_zip": "",
+      "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026120065",
       "flags": [
         "Multiple distress docs",
         "LLC / corp owner"
@@ -24467,6 +24993,34 @@
       "mail_state": "",
       "mail_zip": "",
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026120472",
+      "flags": [
+        "Lien / UCC",
+        "LLC / corp owner"
+      ],
+      "score": 40
+    },
+    {
+      "doc_num": "2026121255",
+      "doc_type": "FS",
+      "doc_label": "Finance Statement / UCC",
+      "filed": "",
+      "cat": "lien",
+      "cat_label": "UCC / Finance Lien",
+      "county": "Duval",
+      "state": "FL",
+      "owner": "NUTEX HEALTH INC",
+      "grantee": "CORPORATION SERVICE COMPANY",
+      "amount": 0,
+      "legal": "REDHAWK VILLAGE TRACT A",
+      "prop_address": "",
+      "prop_city": "",
+      "prop_state": "FL",
+      "prop_zip": "",
+      "mail_address": "",
+      "mail_city": "",
+      "mail_state": "",
+      "mail_zip": "",
+      "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026121255",
       "flags": [
         "Lien / UCC",
         "LLC / corp owner"
@@ -41295,6 +41849,708 @@
       "score": 35
     },
     {
+      "doc_num": "2026121179",
+      "doc_type": "JDG",
+      "doc_label": "Judgment",
+      "filed": "",
+      "cat": "judgment",
+      "cat_label": "Judgment / Lien",
+      "county": "Duval",
+      "state": "FL",
+      "owner": "HOLMES ONZLO",
+      "grantee": "NAVY FEDERAL CREDIT UNION",
+      "amount": 0,
+      "legal": "",
+      "prop_address": "",
+      "prop_city": "",
+      "prop_state": "FL",
+      "prop_zip": "",
+      "mail_address": "",
+      "mail_city": "",
+      "mail_state": "",
+      "mail_zip": "",
+      "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026121179",
+      "flags": [
+        "Judgment lien"
+      ],
+      "score": 35
+    },
+    {
+      "doc_num": "2026121184",
+      "doc_type": "JDG",
+      "doc_label": "Judgment",
+      "filed": "",
+      "cat": "judgment",
+      "cat_label": "Judgment / Lien",
+      "county": "Duval",
+      "state": "FL",
+      "owner": "SCHWARTZ ANTHONYJAY PABLO",
+      "grantee": "BANK OF AMERICA N.A.",
+      "amount": 0,
+      "legal": "",
+      "prop_address": "",
+      "prop_city": "",
+      "prop_state": "FL",
+      "prop_zip": "",
+      "mail_address": "",
+      "mail_city": "",
+      "mail_state": "",
+      "mail_zip": "",
+      "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026121184",
+      "flags": [
+        "Judgment lien"
+      ],
+      "score": 35
+    },
+    {
+      "doc_num": "2026121187",
+      "doc_type": "JDG",
+      "doc_label": "Judgment",
+      "filed": "",
+      "cat": "judgment",
+      "cat_label": "Judgment / Lien",
+      "county": "Duval",
+      "state": "FL",
+      "owner": "ACOSTA JENNIFER",
+      "grantee": "PENNYMAC LOAN SERVICES LLC",
+      "amount": 0,
+      "legal": "L 359 WINCHESTER RIDGE PHASE 2 U 5",
+      "prop_address": "",
+      "prop_city": "",
+      "prop_state": "FL",
+      "prop_zip": "",
+      "mail_address": "",
+      "mail_city": "",
+      "mail_state": "",
+      "mail_zip": "",
+      "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026121187",
+      "flags": [
+        "Judgment lien"
+      ],
+      "score": 35
+    },
+    {
+      "doc_num": "2026121239",
+      "doc_type": "JDG",
+      "doc_label": "Judgment",
+      "filed": "",
+      "cat": "judgment",
+      "cat_label": "Judgment / Lien",
+      "county": "Duval",
+      "state": "FL",
+      "owner": "CAGGIANO THOMAS",
+      "grantee": "HERON POINTE APARTMENTS (FL) OWNER LLC",
+      "amount": 0,
+      "legal": "",
+      "prop_address": "",
+      "prop_city": "",
+      "prop_state": "FL",
+      "prop_zip": "",
+      "mail_address": "",
+      "mail_city": "",
+      "mail_state": "",
+      "mail_zip": "",
+      "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026121239",
+      "flags": [
+        "Judgment lien"
+      ],
+      "score": 35
+    },
+    {
+      "doc_num": "2026121241",
+      "doc_type": "JDG",
+      "doc_label": "Judgment",
+      "filed": "",
+      "cat": "judgment",
+      "cat_label": "Judgment / Lien",
+      "county": "Duval",
+      "state": "FL",
+      "owner": "DENSON TREVIS TYSHARN",
+      "grantee": "FLORIDA STATE OF",
+      "amount": 0,
+      "legal": "",
+      "prop_address": "",
+      "prop_city": "",
+      "prop_state": "FL",
+      "prop_zip": "",
+      "mail_address": "",
+      "mail_city": "",
+      "mail_state": "",
+      "mail_zip": "",
+      "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026121241",
+      "flags": [
+        "Judgment lien"
+      ],
+      "score": 35
+    },
+    {
+      "doc_num": "2026121251",
+      "doc_type": "JDG",
+      "doc_label": "Judgment",
+      "filed": "",
+      "cat": "judgment",
+      "cat_label": "Judgment / Lien",
+      "county": "Duval",
+      "state": "FL",
+      "owner": "LIZARAZO JOHN B",
+      "grantee": "WELLS FARGO BANK N.A.",
+      "amount": 0,
+      "legal": "",
+      "prop_address": "",
+      "prop_city": "",
+      "prop_state": "FL",
+      "prop_zip": "",
+      "mail_address": "",
+      "mail_city": "",
+      "mail_state": "",
+      "mail_zip": "",
+      "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026121251",
+      "flags": [
+        "Judgment lien"
+      ],
+      "score": 35
+    },
+    {
+      "doc_num": "2026121257",
+      "doc_type": "JDG",
+      "doc_label": "Judgment",
+      "filed": "",
+      "cat": "judgment",
+      "cat_label": "Judgment / Lien",
+      "county": "Duval",
+      "state": "FL",
+      "owner": "TREVASKIS NATHAN",
+      "grantee": "SM-SUMMER GLEN LLC",
+      "amount": 0,
+      "legal": "",
+      "prop_address": "",
+      "prop_city": "",
+      "prop_state": "FL",
+      "prop_zip": "",
+      "mail_address": "",
+      "mail_city": "",
+      "mail_state": "",
+      "mail_zip": "",
+      "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026121257",
+      "flags": [
+        "Judgment lien"
+      ],
+      "score": 35
+    },
+    {
+      "doc_num": "2026121268",
+      "doc_type": "JDG",
+      "doc_label": "Judgment",
+      "filed": "",
+      "cat": "judgment",
+      "cat_label": "Judgment / Lien",
+      "county": "Duval",
+      "state": "FL",
+      "owner": "LOVERA JESMIR",
+      "grantee": "THE KENSLEY ACQUISITION LLC",
+      "amount": 0,
+      "legal": "",
+      "prop_address": "",
+      "prop_city": "",
+      "prop_state": "FL",
+      "prop_zip": "",
+      "mail_address": "",
+      "mail_city": "",
+      "mail_state": "",
+      "mail_zip": "",
+      "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026121268",
+      "flags": [
+        "Judgment lien"
+      ],
+      "score": 35
+    },
+    {
+      "doc_num": "2026121269",
+      "doc_type": "JDG",
+      "doc_label": "Judgment",
+      "filed": "",
+      "cat": "judgment",
+      "cat_label": "Judgment / Lien",
+      "county": "Duval",
+      "state": "FL",
+      "owner": "JERVIS SHENELLE",
+      "grantee": "FREEMAN-JERVIS SHERIA",
+      "amount": 0,
+      "legal": "",
+      "prop_address": "",
+      "prop_city": "",
+      "prop_state": "FL",
+      "prop_zip": "",
+      "mail_address": "",
+      "mail_city": "",
+      "mail_state": "",
+      "mail_zip": "",
+      "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026121269",
+      "flags": [
+        "Judgment lien"
+      ],
+      "score": 35
+    },
+    {
+      "doc_num": "2026121271",
+      "doc_type": "JDG",
+      "doc_label": "Judgment",
+      "filed": "",
+      "cat": "judgment",
+      "cat_label": "Judgment / Lien",
+      "county": "Duval",
+      "state": "FL",
+      "owner": "CASSIMERE CADEN",
+      "grantee": "AH4R MANAGEMENT-FL LLC",
+      "amount": 0,
+      "legal": "",
+      "prop_address": "",
+      "prop_city": "",
+      "prop_state": "FL",
+      "prop_zip": "",
+      "mail_address": "",
+      "mail_city": "",
+      "mail_state": "",
+      "mail_zip": "",
+      "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026121271",
+      "flags": [
+        "Judgment lien"
+      ],
+      "score": 35
+    },
+    {
+      "doc_num": "2026121272",
+      "doc_type": "JDG",
+      "doc_label": "Judgment",
+      "filed": "",
+      "cat": "judgment",
+      "cat_label": "Judgment / Lien",
+      "county": "Duval",
+      "state": "FL",
+      "owner": "MHANITE FATIMA A",
+      "grantee": "LV REALTY LLC",
+      "amount": 0,
+      "legal": "",
+      "prop_address": "",
+      "prop_city": "",
+      "prop_state": "FL",
+      "prop_zip": "",
+      "mail_address": "",
+      "mail_city": "",
+      "mail_state": "",
+      "mail_zip": "",
+      "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026121272",
+      "flags": [
+        "Judgment lien"
+      ],
+      "score": 35
+    },
+    {
+      "doc_num": "2026121280",
+      "doc_type": "JDG",
+      "doc_label": "Judgment",
+      "filed": "",
+      "cat": "judgment",
+      "cat_label": "Judgment / Lien",
+      "county": "Duval",
+      "state": "FL",
+      "owner": "ODOMS SURENA CHANTAIL",
+      "grantee": "CITY LIGHTS REAL ESTATE LLC",
+      "amount": 0,
+      "legal": "",
+      "prop_address": "",
+      "prop_city": "",
+      "prop_state": "FL",
+      "prop_zip": "",
+      "mail_address": "",
+      "mail_city": "",
+      "mail_state": "",
+      "mail_zip": "",
+      "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026121280",
+      "flags": [
+        "Judgment lien"
+      ],
+      "score": 35
+    },
+    {
+      "doc_num": "2026121281",
+      "doc_type": "JDG",
+      "doc_label": "Judgment",
+      "filed": "",
+      "cat": "judgment",
+      "cat_label": "Judgment / Lien",
+      "county": "Duval",
+      "state": "FL",
+      "owner": "SAVAGE TIFFANY",
+      "grantee": "PADUA RAYMOND DE",
+      "amount": 0,
+      "legal": "",
+      "prop_address": "",
+      "prop_city": "",
+      "prop_state": "FL",
+      "prop_zip": "",
+      "mail_address": "",
+      "mail_city": "",
+      "mail_state": "",
+      "mail_zip": "",
+      "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026121281",
+      "flags": [
+        "Judgment lien"
+      ],
+      "score": 35
+    },
+    {
+      "doc_num": "2026121283",
+      "doc_type": "JDG",
+      "doc_label": "Judgment",
+      "filed": "",
+      "cat": "judgment",
+      "cat_label": "Judgment / Lien",
+      "county": "Duval",
+      "state": "FL",
+      "owner": "SAMUEL ROQUAN",
+      "grantee": "ACP PALMETTO LLC",
+      "amount": 0,
+      "legal": "",
+      "prop_address": "",
+      "prop_city": "",
+      "prop_state": "FL",
+      "prop_zip": "",
+      "mail_address": "",
+      "mail_city": "",
+      "mail_state": "",
+      "mail_zip": "",
+      "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026121283",
+      "flags": [
+        "Judgment lien"
+      ],
+      "score": 35
+    },
+    {
+      "doc_num": "2026121286",
+      "doc_type": "JDG",
+      "doc_label": "Judgment",
+      "filed": "",
+      "cat": "judgment",
+      "cat_label": "Judgment / Lien",
+      "county": "Duval",
+      "state": "FL",
+      "owner": "BOYER AMBER RENEE",
+      "grantee": "COMMUNITY FIRST CREDIT UNION OF FLORIDA",
+      "amount": 0,
+      "legal": "",
+      "prop_address": "",
+      "prop_city": "",
+      "prop_state": "FL",
+      "prop_zip": "",
+      "mail_address": "",
+      "mail_city": "",
+      "mail_state": "",
+      "mail_zip": "",
+      "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026121286",
+      "flags": [
+        "Judgment lien"
+      ],
+      "score": 35
+    },
+    {
+      "doc_num": "2026121293",
+      "doc_type": "JDG",
+      "doc_label": "Judgment",
+      "filed": "",
+      "cat": "judgment",
+      "cat_label": "Judgment / Lien",
+      "county": "Duval",
+      "state": "FL",
+      "owner": "MCLAURN WILLIAM III",
+      "grantee": "YES HOMESALES LLC",
+      "amount": 0,
+      "legal": "",
+      "prop_address": "",
+      "prop_city": "",
+      "prop_state": "FL",
+      "prop_zip": "",
+      "mail_address": "",
+      "mail_city": "",
+      "mail_state": "",
+      "mail_zip": "",
+      "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026121293",
+      "flags": [
+        "Judgment lien"
+      ],
+      "score": 35
+    },
+    {
+      "doc_num": "2026121296",
+      "doc_type": "JDG",
+      "doc_label": "Judgment",
+      "filed": "",
+      "cat": "judgment",
+      "cat_label": "Judgment / Lien",
+      "county": "Duval",
+      "state": "FL",
+      "owner": "SPEARMAN CHARLENE",
+      "grantee": "PROGRESS RESIDENTIAL BORROWER 20 LLC",
+      "amount": 0,
+      "legal": "",
+      "prop_address": "",
+      "prop_city": "",
+      "prop_state": "FL",
+      "prop_zip": "",
+      "mail_address": "",
+      "mail_city": "",
+      "mail_state": "",
+      "mail_zip": "",
+      "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026121296",
+      "flags": [
+        "Judgment lien"
+      ],
+      "score": 35
+    },
+    {
+      "doc_num": "2026121298",
+      "doc_type": "JDG",
+      "doc_label": "Judgment",
+      "filed": "",
+      "cat": "judgment",
+      "cat_label": "Judgment / Lien",
+      "county": "Duval",
+      "state": "FL",
+      "owner": "DEA MARITA",
+      "grantee": "FR TERRAPIN STATION LLC",
+      "amount": 0,
+      "legal": "",
+      "prop_address": "",
+      "prop_city": "",
+      "prop_state": "FL",
+      "prop_zip": "",
+      "mail_address": "",
+      "mail_city": "",
+      "mail_state": "",
+      "mail_zip": "",
+      "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026121298",
+      "flags": [
+        "Judgment lien"
+      ],
+      "score": 35
+    },
+    {
+      "doc_num": "2026121299",
+      "doc_type": "JDG",
+      "doc_label": "Judgment",
+      "filed": "",
+      "cat": "judgment",
+      "cat_label": "Judgment / Lien",
+      "county": "Duval",
+      "state": "FL",
+      "owner": "ALCIUS LENZ",
+      "grantee": "VINTAGE PLANTATION LLC",
+      "amount": 0,
+      "legal": "",
+      "prop_address": "",
+      "prop_city": "",
+      "prop_state": "FL",
+      "prop_zip": "",
+      "mail_address": "",
+      "mail_city": "",
+      "mail_state": "",
+      "mail_zip": "",
+      "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026121299",
+      "flags": [
+        "Judgment lien"
+      ],
+      "score": 35
+    },
+    {
+      "doc_num": "2026121301",
+      "doc_type": "JDG",
+      "doc_label": "Judgment",
+      "filed": "",
+      "cat": "judgment",
+      "cat_label": "Judgment / Lien",
+      "county": "Duval",
+      "state": "FL",
+      "owner": "REYES MARIA",
+      "grantee": "RIVER ROAD APARTMENTS LLC",
+      "amount": 0,
+      "legal": "",
+      "prop_address": "",
+      "prop_city": "",
+      "prop_state": "FL",
+      "prop_zip": "",
+      "mail_address": "",
+      "mail_city": "",
+      "mail_state": "",
+      "mail_zip": "",
+      "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026121301",
+      "flags": [
+        "Judgment lien"
+      ],
+      "score": 35
+    },
+    {
+      "doc_num": "2026121305",
+      "doc_type": "JDG",
+      "doc_label": "Judgment",
+      "filed": "",
+      "cat": "judgment",
+      "cat_label": "Judgment / Lien",
+      "county": "Duval",
+      "state": "FL",
+      "owner": "LAKE STEPHEN",
+      "grantee": "RRE BAY CLUB HOLDINGS LLC",
+      "amount": 0,
+      "legal": "",
+      "prop_address": "",
+      "prop_city": "",
+      "prop_state": "FL",
+      "prop_zip": "",
+      "mail_address": "",
+      "mail_city": "",
+      "mail_state": "",
+      "mail_zip": "",
+      "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026121305",
+      "flags": [
+        "Judgment lien"
+      ],
+      "score": 35
+    },
+    {
+      "doc_num": "2026121306",
+      "doc_type": "JDG",
+      "doc_label": "Judgment",
+      "filed": "",
+      "cat": "judgment",
+      "cat_label": "Judgment / Lien",
+      "county": "Duval",
+      "state": "FL",
+      "owner": "EMBRY NEKIDRA",
+      "grantee": "BOWDEN ROAD HOUSING LTD",
+      "amount": 0,
+      "legal": "",
+      "prop_address": "",
+      "prop_city": "",
+      "prop_state": "FL",
+      "prop_zip": "",
+      "mail_address": "",
+      "mail_city": "",
+      "mail_state": "",
+      "mail_zip": "",
+      "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026121306",
+      "flags": [
+        "Judgment lien"
+      ],
+      "score": 35
+    },
+    {
+      "doc_num": "2026121308",
+      "doc_type": "JDG",
+      "doc_label": "Judgment",
+      "filed": "",
+      "cat": "judgment",
+      "cat_label": "Judgment / Lien",
+      "county": "Duval",
+      "state": "FL",
+      "owner": "MARCANO MARIANNE ARTIZ SANCHEZ",
+      "grantee": "JR HOMES USA LLC",
+      "amount": 0,
+      "legal": "",
+      "prop_address": "",
+      "prop_city": "",
+      "prop_state": "FL",
+      "prop_zip": "",
+      "mail_address": "",
+      "mail_city": "",
+      "mail_state": "",
+      "mail_zip": "",
+      "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026121308",
+      "flags": [
+        "Judgment lien"
+      ],
+      "score": 35
+    },
+    {
+      "doc_num": "2026121310",
+      "doc_type": "JDG",
+      "doc_label": "Judgment",
+      "filed": "",
+      "cat": "judgment",
+      "cat_label": "Judgment / Lien",
+      "county": "Duval",
+      "state": "FL",
+      "owner": "MIRANDA YESENIA",
+      "grantee": "BOWDEN ROAD HOUSING LTD",
+      "amount": 0,
+      "legal": "",
+      "prop_address": "",
+      "prop_city": "",
+      "prop_state": "FL",
+      "prop_zip": "",
+      "mail_address": "",
+      "mail_city": "",
+      "mail_state": "",
+      "mail_zip": "",
+      "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026121310",
+      "flags": [
+        "Judgment lien"
+      ],
+      "score": 35
+    },
+    {
+      "doc_num": "2026121318",
+      "doc_type": "JDG",
+      "doc_label": "Judgment",
+      "filed": "",
+      "cat": "judgment",
+      "cat_label": "Judgment / Lien",
+      "county": "Duval",
+      "state": "FL",
+      "owner": "BENJAMIN TIAHNNA",
+      "grantee": "LEVANZO PARTNERS LLC",
+      "amount": 0,
+      "legal": "",
+      "prop_address": "",
+      "prop_city": "",
+      "prop_state": "FL",
+      "prop_zip": "",
+      "mail_address": "",
+      "mail_city": "",
+      "mail_state": "",
+      "mail_zip": "",
+      "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026121318",
+      "flags": [
+        "Judgment lien"
+      ],
+      "score": 35
+    },
+    {
+      "doc_num": "2026121319",
+      "doc_type": "JDG",
+      "doc_label": "Judgment",
+      "filed": "",
+      "cat": "judgment",
+      "cat_label": "Judgment / Lien",
+      "county": "Duval",
+      "state": "FL",
+      "owner": "ORDONEZ MARCOS",
+      "grantee": "SUNTREE JACKSONVILLE MHP LLC",
+      "amount": 0,
+      "legal": "",
+      "prop_address": "",
+      "prop_city": "",
+      "prop_state": "FL",
+      "prop_zip": "",
+      "mail_address": "",
+      "mail_city": "",
+      "mail_state": "",
+      "mail_zip": "",
+      "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026121319",
+      "flags": [
+        "Judgment lien"
+      ],
+      "score": 35
+    },
+    {
       "doc_num": "2026116250",
       "doc_type": "JDGR",
       "doc_label": "Judgment / Restitution",
@@ -41370,33 +42626,6 @@
       "mail_state": "",
       "mail_zip": "",
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026116816",
-      "flags": [
-        "Judgment lien"
-      ],
-      "score": 35
-    },
-    {
-      "doc_num": "2026116863",
-      "doc_type": "JDGR",
-      "doc_label": "Judgment / Restitution",
-      "filed": "",
-      "cat": "judgment",
-      "cat_label": "Judgment / Lien",
-      "county": "Duval",
-      "state": "FL",
-      "owner": "CUFF ERIK TREALL",
-      "grantee": "FLORIDA STATE OF",
-      "amount": 0,
-      "legal": "",
-      "prop_address": "",
-      "prop_city": "",
-      "prop_state": "FL",
-      "prop_zip": "",
-      "mail_address": "",
-      "mail_city": "",
-      "mail_state": "",
-      "mail_zip": "",
-      "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026116863",
       "flags": [
         "Judgment lien"
       ],
@@ -52716,6 +53945,222 @@
       "score": 35
     },
     {
+      "doc_num": "2026121180",
+      "doc_type": "JDGS",
+      "doc_label": "Judgment / Sentence",
+      "filed": "",
+      "cat": "judgment",
+      "cat_label": "Judgment / Lien",
+      "county": "Duval",
+      "state": "FL",
+      "owner": "GATES THATCHER LAVARES",
+      "grantee": "FLORIDA STATE OF",
+      "amount": 0,
+      "legal": "",
+      "prop_address": "",
+      "prop_city": "",
+      "prop_state": "FL",
+      "prop_zip": "",
+      "mail_address": "",
+      "mail_city": "",
+      "mail_state": "",
+      "mail_zip": "",
+      "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026121180",
+      "flags": [
+        "Judgment lien"
+      ],
+      "score": 35
+    },
+    {
+      "doc_num": "2026121185",
+      "doc_type": "JDGS",
+      "doc_label": "Judgment / Sentence",
+      "filed": "",
+      "cat": "judgment",
+      "cat_label": "Judgment / Lien",
+      "county": "Duval",
+      "state": "FL",
+      "owner": "MULLINS LATASHA LOUISE",
+      "grantee": "FLORIDA STATE OF",
+      "amount": 0,
+      "legal": "",
+      "prop_address": "",
+      "prop_city": "",
+      "prop_state": "FL",
+      "prop_zip": "",
+      "mail_address": "",
+      "mail_city": "",
+      "mail_state": "",
+      "mail_zip": "",
+      "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026121185",
+      "flags": [
+        "Judgment lien"
+      ],
+      "score": 35
+    },
+    {
+      "doc_num": "2026121243",
+      "doc_type": "JDGS",
+      "doc_label": "Judgment / Sentence",
+      "filed": "",
+      "cat": "judgment",
+      "cat_label": "Judgment / Lien",
+      "county": "Duval",
+      "state": "FL",
+      "owner": "ROBINSON NORMAN",
+      "grantee": "FLORIDA STATE OF",
+      "amount": 0,
+      "legal": "",
+      "prop_address": "",
+      "prop_city": "",
+      "prop_state": "FL",
+      "prop_zip": "",
+      "mail_address": "",
+      "mail_city": "",
+      "mail_state": "",
+      "mail_zip": "",
+      "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026121243",
+      "flags": [
+        "Judgment lien"
+      ],
+      "score": 35
+    },
+    {
+      "doc_num": "2026121244",
+      "doc_type": "JDGS",
+      "doc_label": "Judgment / Sentence",
+      "filed": "",
+      "cat": "judgment",
+      "cat_label": "Judgment / Lien",
+      "county": "Duval",
+      "state": "FL",
+      "owner": "BASKINS ERIC NATHEIAL",
+      "grantee": "FLORIDA STATE OF",
+      "amount": 0,
+      "legal": "",
+      "prop_address": "",
+      "prop_city": "",
+      "prop_state": "FL",
+      "prop_zip": "",
+      "mail_address": "",
+      "mail_city": "",
+      "mail_state": "",
+      "mail_zip": "",
+      "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026121244",
+      "flags": [
+        "Judgment lien"
+      ],
+      "score": 35
+    },
+    {
+      "doc_num": "2026121258",
+      "doc_type": "JDGS",
+      "doc_label": "Judgment / Sentence",
+      "filed": "",
+      "cat": "judgment",
+      "cat_label": "Judgment / Lien",
+      "county": "Duval",
+      "state": "FL",
+      "owner": "STACY EUGENE",
+      "grantee": "FLORIDA STATE OF",
+      "amount": 0,
+      "legal": "",
+      "prop_address": "",
+      "prop_city": "",
+      "prop_state": "FL",
+      "prop_zip": "",
+      "mail_address": "",
+      "mail_city": "",
+      "mail_state": "",
+      "mail_zip": "",
+      "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026121258",
+      "flags": [
+        "Judgment lien"
+      ],
+      "score": 35
+    },
+    {
+      "doc_num": "2026121309",
+      "doc_type": "JDGS",
+      "doc_label": "Judgment / Sentence",
+      "filed": "",
+      "cat": "judgment",
+      "cat_label": "Judgment / Lien",
+      "county": "Duval",
+      "state": "FL",
+      "owner": "ALVARADO KENN",
+      "grantee": "FLORIDA STATE OF",
+      "amount": 0,
+      "legal": "",
+      "prop_address": "",
+      "prop_city": "",
+      "prop_state": "FL",
+      "prop_zip": "",
+      "mail_address": "",
+      "mail_city": "",
+      "mail_state": "",
+      "mail_zip": "",
+      "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026121309",
+      "flags": [
+        "Judgment lien"
+      ],
+      "score": 35
+    },
+    {
+      "doc_num": "2026121327",
+      "doc_type": "JDGS",
+      "doc_label": "Judgment / Sentence",
+      "filed": "",
+      "cat": "judgment",
+      "cat_label": "Judgment / Lien",
+      "county": "Duval",
+      "state": "FL",
+      "owner": "MAUNEY-LUCE MICHAEL LLOYD RAYMOND",
+      "grantee": "FLORIDA STATE OF",
+      "amount": 0,
+      "legal": "",
+      "prop_address": "",
+      "prop_city": "",
+      "prop_state": "FL",
+      "prop_zip": "",
+      "mail_address": "",
+      "mail_city": "",
+      "mail_state": "",
+      "mail_zip": "",
+      "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026121327",
+      "flags": [
+        "Judgment lien"
+      ],
+      "score": 35
+    },
+    {
+      "doc_num": "2026121329",
+      "doc_type": "JDGS",
+      "doc_label": "Judgment / Sentence",
+      "filed": "",
+      "cat": "judgment",
+      "cat_label": "Judgment / Lien",
+      "county": "Duval",
+      "state": "FL",
+      "owner": "PINEDA CARLOS FERNANDO LUTIN",
+      "grantee": "FLORIDA STATE OF",
+      "amount": 0,
+      "legal": "",
+      "prop_address": "",
+      "prop_city": "",
+      "prop_state": "FL",
+      "prop_zip": "",
+      "mail_address": "",
+      "mail_city": "",
+      "mail_state": "",
+      "mail_zip": "",
+      "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026121329",
+      "flags": [
+        "Judgment lien"
+      ],
+      "score": 35
+    },
+    {
       "doc_num": "2026115583",
       "doc_type": "CCCJUDG",
       "doc_label": "CC Court Judgment",
@@ -56598,6 +58043,168 @@
       "mail_state": "",
       "mail_zip": "",
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026120888",
+      "flags": [
+        "Judgment lien"
+      ],
+      "score": 35
+    },
+    {
+      "doc_num": "2026121218",
+      "doc_type": "CCCJUDG",
+      "doc_label": "CC Court Judgment",
+      "filed": "",
+      "cat": "judgment",
+      "cat_label": "Judgment / Lien",
+      "county": "Duval",
+      "state": "FL",
+      "owner": "BRITTON CRYSTAL",
+      "grantee": "RED TARGET LLC",
+      "amount": 0,
+      "legal": "",
+      "prop_address": "",
+      "prop_city": "",
+      "prop_state": "FL",
+      "prop_zip": "",
+      "mail_address": "",
+      "mail_city": "",
+      "mail_state": "",
+      "mail_zip": "",
+      "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026121218",
+      "flags": [
+        "Judgment lien"
+      ],
+      "score": 35
+    },
+    {
+      "doc_num": "2026121219",
+      "doc_type": "CCCJUDG",
+      "doc_label": "CC Court Judgment",
+      "filed": "",
+      "cat": "judgment",
+      "cat_label": "Judgment / Lien",
+      "county": "Duval",
+      "state": "FL",
+      "owner": "PIERCY STEVEN",
+      "grantee": "VELOCITY INVESTMENTS LLC",
+      "amount": 0,
+      "legal": "",
+      "prop_address": "",
+      "prop_city": "",
+      "prop_state": "FL",
+      "prop_zip": "",
+      "mail_address": "",
+      "mail_city": "",
+      "mail_state": "",
+      "mail_zip": "",
+      "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026121219",
+      "flags": [
+        "Judgment lien"
+      ],
+      "score": 35
+    },
+    {
+      "doc_num": "2026121220",
+      "doc_type": "CCCJUDG",
+      "doc_label": "CC Court Judgment",
+      "filed": "",
+      "cat": "judgment",
+      "cat_label": "Judgment / Lien",
+      "county": "Duval",
+      "state": "FL",
+      "owner": "GARY MOSLEY",
+      "grantee": "RED TARGET LLC",
+      "amount": 0,
+      "legal": "",
+      "prop_address": "",
+      "prop_city": "",
+      "prop_state": "FL",
+      "prop_zip": "",
+      "mail_address": "",
+      "mail_city": "",
+      "mail_state": "",
+      "mail_zip": "",
+      "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026121220",
+      "flags": [
+        "Judgment lien"
+      ],
+      "score": 35
+    },
+    {
+      "doc_num": "2026121221",
+      "doc_type": "CCCJUDG",
+      "doc_label": "CC Court Judgment",
+      "filed": "",
+      "cat": "judgment",
+      "cat_label": "Judgment / Lien",
+      "county": "Duval",
+      "state": "FL",
+      "owner": "CARTER AARON",
+      "grantee": "VELOCITY INVESTMENTS LLC",
+      "amount": 0,
+      "legal": "",
+      "prop_address": "",
+      "prop_city": "",
+      "prop_state": "FL",
+      "prop_zip": "",
+      "mail_address": "",
+      "mail_city": "",
+      "mail_state": "",
+      "mail_zip": "",
+      "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026121221",
+      "flags": [
+        "Judgment lien"
+      ],
+      "score": 35
+    },
+    {
+      "doc_num": "2026121222",
+      "doc_type": "CCCJUDG",
+      "doc_label": "CC Court Judgment",
+      "filed": "",
+      "cat": "judgment",
+      "cat_label": "Judgment / Lien",
+      "county": "Duval",
+      "state": "FL",
+      "owner": "WALKER DEZIRAE",
+      "grantee": "DNF ASSOCIATES LLC",
+      "amount": 0,
+      "legal": "",
+      "prop_address": "",
+      "prop_city": "",
+      "prop_state": "FL",
+      "prop_zip": "",
+      "mail_address": "",
+      "mail_city": "",
+      "mail_state": "",
+      "mail_zip": "",
+      "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026121222",
+      "flags": [
+        "Judgment lien"
+      ],
+      "score": 35
+    },
+    {
+      "doc_num": "2026121223",
+      "doc_type": "CCCJUDG",
+      "doc_label": "CC Court Judgment",
+      "filed": "",
+      "cat": "judgment",
+      "cat_label": "Judgment / Lien",
+      "county": "Duval",
+      "state": "FL",
+      "owner": "JOINER SEAN",
+      "grantee": "VELOCITY INVESTMENTS LLC",
+      "amount": 0,
+      "legal": "",
+      "prop_address": "",
+      "prop_city": "",
+      "prop_state": "FL",
+      "prop_zip": "",
+      "mail_address": "",
+      "mail_city": "",
+      "mail_state": "",
+      "mail_zip": "",
+      "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026121223",
       "flags": [
         "Judgment lien"
       ],
@@ -60627,6 +62234,33 @@
       "score": 35
     },
     {
+      "doc_num": "2026121207",
+      "doc_type": "LN",
+      "doc_label": "Lien",
+      "filed": "",
+      "cat": "lien",
+      "cat_label": "Lien",
+      "county": "Duval",
+      "state": "FL",
+      "owner": "SIRMANS ELLIS JR",
+      "grantee": "ROOFING PROS USA II LLC",
+      "amount": 0,
+      "legal": "L 100 DUNNS CROSSING U 1",
+      "prop_address": "",
+      "prop_city": "",
+      "prop_state": "FL",
+      "prop_zip": "",
+      "mail_address": "",
+      "mail_city": "",
+      "mail_state": "",
+      "mail_zip": "",
+      "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026121207",
+      "flags": [
+        "Lien / UCC"
+      ],
+      "score": 35
+    },
+    {
       "doc_num": "2026114995",
       "doc_type": "DTH",
       "doc_label": "Death Certificate",
@@ -62463,33 +64097,6 @@
       "score": 35
     },
     {
-      "doc_num": "2026118694",
-      "doc_type": "NOC",
-      "doc_label": "Notice of Commencement",
-      "filed": "",
-      "cat": "noc",
-      "cat_label": "Notice of Commencement",
-      "county": "Duval",
-      "state": "FL",
-      "owner": "HERITAGE ROOFING OF NORTH FLORIDA",
-      "grantee": "BACON KRISTOPHER P",
-      "amount": 0,
-      "legal": "L 29 41 SANS SOUCI SEC 20 56-3S-27E",
-      "prop_address": "",
-      "prop_city": "",
-      "prop_state": "FL",
-      "prop_zip": "",
-      "mail_address": "",
-      "mail_city": "",
-      "mail_state": "",
-      "mail_zip": "",
-      "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026118694",
-      "flags": [
-        "Multiple distress docs"
-      ],
-      "score": 35
-    },
-    {
       "doc_num": "2026118993",
       "doc_type": "NOC",
       "doc_label": "Notice of Commencement",
@@ -62646,33 +64253,6 @@
       "mail_state": "",
       "mail_zip": "",
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026120280",
-      "flags": [
-        "Multiple distress docs"
-      ],
-      "score": 35
-    },
-    {
-      "doc_num": "2026120679",
-      "doc_type": "NOC",
-      "doc_label": "Notice of Commencement",
-      "filed": "",
-      "cat": "noc",
-      "cat_label": "Notice of Commencement",
-      "county": "Duval",
-      "state": "FL",
-      "owner": "HERITAGE ROOFING OF NORTH FLORIDA",
-      "grantee": "SINGH ARDINA SETH",
-      "amount": 0,
-      "legal": "L121 WATERFLEAF U1 SEC 39-2S-28E",
-      "prop_address": "",
-      "prop_city": "",
-      "prop_state": "FL",
-      "prop_zip": "",
-      "mail_address": "",
-      "mail_city": "",
-      "mail_state": "",
-      "mail_zip": "",
-      "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026120679",
       "flags": [
         "Multiple distress docs"
       ],
@@ -64806,6 +66386,141 @@
       "mail_state": "",
       "mail_zip": "",
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026121091",
+      "flags": [
+        "Lien / UCC"
+      ],
+      "score": 30
+    },
+    {
+      "doc_num": "2026121194",
+      "doc_type": "FS",
+      "doc_label": "Finance Statement / UCC",
+      "filed": "",
+      "cat": "lien",
+      "cat_label": "UCC / Finance Lien",
+      "county": "Duval",
+      "state": "FL",
+      "owner": "CRITTENDON CHARNITA",
+      "grantee": "GLOBAL SUN POOLS LLC",
+      "amount": 0,
+      "legal": "L 4 B 39 EAST GRAND PARK",
+      "prop_address": "",
+      "prop_city": "",
+      "prop_state": "FL",
+      "prop_zip": "",
+      "mail_address": "",
+      "mail_city": "",
+      "mail_state": "",
+      "mail_zip": "",
+      "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026121194",
+      "flags": [
+        "Lien / UCC"
+      ],
+      "score": 30
+    },
+    {
+      "doc_num": "2026121253",
+      "doc_type": "FS",
+      "doc_label": "Finance Statement / UCC",
+      "filed": "",
+      "cat": "lien",
+      "cat_label": "UCC / Finance Lien",
+      "county": "Duval",
+      "state": "FL",
+      "owner": "MOLONEY MEGHAN",
+      "grantee": "KEYBANK NATIONAL ASSOCIATION",
+      "amount": 0,
+      "legal": "L 445 ALTA LAKES PHASE 1 SEC 2-1S-27E",
+      "prop_address": "",
+      "prop_city": "",
+      "prop_state": "FL",
+      "prop_zip": "",
+      "mail_address": "",
+      "mail_city": "",
+      "mail_state": "",
+      "mail_zip": "",
+      "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026121253",
+      "flags": [
+        "Lien / UCC"
+      ],
+      "score": 30
+    },
+    {
+      "doc_num": "2026121266",
+      "doc_type": "FS",
+      "doc_label": "Finance Statement / UCC",
+      "filed": "",
+      "cat": "lien",
+      "cat_label": "UCC / Finance Lien",
+      "county": "Duval",
+      "state": "FL",
+      "owner": "EARLE GILBERT",
+      "grantee": "WATERCRESS FINANCIAL GROUP LLC",
+      "amount": 0,
+      "legal": "L 22 B 1 ARLINGTON HILLS U 8A",
+      "prop_address": "",
+      "prop_city": "",
+      "prop_state": "FL",
+      "prop_zip": "",
+      "mail_address": "",
+      "mail_city": "",
+      "mail_state": "",
+      "mail_zip": "",
+      "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026121266",
+      "flags": [
+        "Lien / UCC"
+      ],
+      "score": 30
+    },
+    {
+      "doc_num": "2026121267",
+      "doc_type": "FS",
+      "doc_label": "Finance Statement / UCC",
+      "filed": "",
+      "cat": "lien",
+      "cat_label": "UCC / Finance Lien",
+      "county": "Duval",
+      "state": "FL",
+      "owner": "DEJOURNETT ANTHONY KEITH",
+      "grantee": "AQUA FINANCE INC",
+      "amount": 0,
+      "legal": "L 21 B 1 CRYSTAL SPRINGS U 3",
+      "prop_address": "",
+      "prop_city": "",
+      "prop_state": "FL",
+      "prop_zip": "",
+      "mail_address": "",
+      "mail_city": "",
+      "mail_state": "",
+      "mail_zip": "",
+      "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026121267",
+      "flags": [
+        "Lien / UCC"
+      ],
+      "score": 30
+    },
+    {
+      "doc_num": "2026121273",
+      "doc_type": "FS",
+      "doc_label": "Finance Statement / UCC",
+      "filed": "",
+      "cat": "lien",
+      "cat_label": "UCC / Finance Lien",
+      "county": "Duval",
+      "state": "FL",
+      "owner": "BRYANT BERNARD",
+      "grantee": "PREFERRED CREDIT INC",
+      "amount": 0,
+      "legal": "L 8 B 5 MONCRIEF MANOR SEC 55-2S-26E",
+      "prop_address": "",
+      "prop_city": "",
+      "prop_state": "FL",
+      "prop_zip": "",
+      "mail_address": "",
+      "mail_city": "",
+      "mail_state": "",
+      "mail_zip": "",
+      "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026121273",
       "flags": [
         "Lien / UCC"
       ],
@@ -69078,6 +70793,33 @@
       "score": 30
     },
     {
+      "doc_num": "2026121291",
+      "doc_type": "NOC",
+      "doc_label": "Notice of Commencement",
+      "filed": "",
+      "cat": "noc",
+      "cat_label": "Notice of Commencement",
+      "county": "Duval",
+      "state": "FL",
+      "owner": "SUMMIT GENERAL CONTRACTORS LLC",
+      "grantee": "DOLLAR TREE STORES INC.",
+      "amount": 0,
+      "legal": "L 1 2 3 4 MERRILL HEIGHTS REPLAT SEC 9-2S-27E",
+      "prop_address": "",
+      "prop_city": "",
+      "prop_state": "FL",
+      "prop_zip": "",
+      "mail_address": "",
+      "mail_city": "",
+      "mail_state": "",
+      "mail_zip": "",
+      "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026121291",
+      "flags": [
+        "LLC / corp owner"
+      ],
+      "score": 30
+    },
+    {
       "doc_num": "2026115586",
       "doc_type": "RELEASE",
       "doc_label": "Release",
@@ -69672,33 +71414,6 @@
       "score": 30
     },
     {
-      "doc_num": "2026120065",
-      "doc_type": "RELEASE",
-      "doc_label": "Release",
-      "filed": "",
-      "cat": "release",
-      "cat_label": "Release",
-      "county": "Duval",
-      "state": "FL",
-      "owner": "ALL AMERICAN OIL LLC",
-      "grantee": "UNITED COMMUNITY BANK",
-      "amount": 0,
-      "legal": "",
-      "prop_address": "",
-      "prop_city": "",
-      "prop_state": "FL",
-      "prop_zip": "",
-      "mail_address": "",
-      "mail_city": "",
-      "mail_state": "",
-      "mail_zip": "",
-      "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026120065",
-      "flags": [
-        "LLC / corp owner"
-      ],
-      "score": 30
-    },
-    {
       "doc_num": "2026120456",
       "doc_type": "RELEASE",
       "doc_label": "Release",
@@ -69747,6 +71462,60 @@
       "mail_state": "",
       "mail_zip": "",
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026120803",
+      "flags": [
+        "LLC / corp owner"
+      ],
+      "score": 30
+    },
+    {
+      "doc_num": "2026121234",
+      "doc_type": "RELEASE",
+      "doc_label": "Release",
+      "filed": "",
+      "cat": "release",
+      "cat_label": "Release",
+      "county": "Duval",
+      "state": "FL",
+      "owner": "SFR JV-1 2021-1 BORROWER LLC",
+      "grantee": "WILMINGTON TRUST NATIONAL ASSOCIATION TRUSTEE",
+      "amount": 0,
+      "legal": "",
+      "prop_address": "",
+      "prop_city": "",
+      "prop_state": "FL",
+      "prop_zip": "",
+      "mail_address": "",
+      "mail_city": "",
+      "mail_state": "",
+      "mail_zip": "",
+      "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026121234",
+      "flags": [
+        "LLC / corp owner"
+      ],
+      "score": 30
+    },
+    {
+      "doc_num": "2026121297",
+      "doc_type": "RELEASE",
+      "doc_label": "Release",
+      "filed": "",
+      "cat": "release",
+      "cat_label": "Release",
+      "county": "Duval",
+      "state": "FL",
+      "owner": "BEACH PETRO LLC",
+      "grantee": "UNITED COMMUNITY BANK",
+      "amount": 0,
+      "legal": "",
+      "prop_address": "",
+      "prop_city": "",
+      "prop_state": "FL",
+      "prop_zip": "",
+      "mail_address": "",
+      "mail_city": "",
+      "mail_state": "",
+      "mail_zip": "",
+      "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026121297",
       "flags": [
         "LLC / corp owner"
       ],
@@ -72971,6 +74740,81 @@
       "mail_state": "",
       "mail_zip": "",
       "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026121171",
+      "flags": [],
+      "score": 20
+    },
+    {
+      "doc_num": "2026121206",
+      "doc_type": "NOC",
+      "doc_label": "Notice of Commencement",
+      "filed": "",
+      "cat": "noc",
+      "cat_label": "Notice of Commencement",
+      "county": "Duval",
+      "state": "FL",
+      "owner": "SOLID ROCK ROOFING",
+      "grantee": "JAMES BLAKE",
+      "amount": 0,
+      "legal": "B 4 JAKCOSNVILLE HEIGHTS SEC 34-2S-25E",
+      "prop_address": "",
+      "prop_city": "",
+      "prop_state": "FL",
+      "prop_zip": "",
+      "mail_address": "",
+      "mail_city": "",
+      "mail_state": "",
+      "mail_zip": "",
+      "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026121206",
+      "flags": [],
+      "score": 20
+    },
+    {
+      "doc_num": "2026121232",
+      "doc_type": "NOC",
+      "doc_label": "Notice of Commencement",
+      "filed": "",
+      "cat": "noc",
+      "cat_label": "Notice of Commencement",
+      "county": "Duval",
+      "state": "FL",
+      "owner": "TOTALLY HOOKED PLUMBING",
+      "grantee": "LIU NICOLE",
+      "amount": 0,
+      "legal": "L 53 VILLA SAN JOSE SEC 20-3S-27E",
+      "prop_address": "",
+      "prop_city": "",
+      "prop_state": "FL",
+      "prop_zip": "",
+      "mail_address": "",
+      "mail_city": "",
+      "mail_state": "",
+      "mail_zip": "",
+      "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026121232",
+      "flags": [],
+      "score": 20
+    },
+    {
+      "doc_num": "2026121292",
+      "doc_type": "NOC",
+      "doc_label": "Notice of Commencement",
+      "filed": "",
+      "cat": "noc",
+      "cat_label": "Notice of Commencement",
+      "county": "Duval",
+      "state": "FL",
+      "owner": "SOUTH EDGE CONSTRUCTION",
+      "grantee": "SUKALE SHIVKUMAR",
+      "amount": 0,
+      "legal": "L 17 SILVERTHRON SEC 15-4S-27E",
+      "prop_address": "",
+      "prop_city": "",
+      "prop_state": "FL",
+      "prop_zip": "",
+      "mail_address": "",
+      "mail_city": "",
+      "mail_state": "",
+      "mail_zip": "",
+      "clerk_url": "https://or.duvalclerk.com/Search/DocImages/SearchTypeDocType/2026121292",
       "flags": [],
       "score": 20
     },
